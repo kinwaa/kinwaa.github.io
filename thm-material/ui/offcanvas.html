@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Material Admin - Layouts</title>
+<title>Material Admin - Off-canvas</title>
 <!-- BEGIN META -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,8 +19,8 @@
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-<script type="text/javascript" src="http://www.codecovers.eu/assets/js/modules/materialadmin/libs/utils/html5shiv.js?1422823601"></script>
-<script type="text/javascript" src="http://www.codecovers.eu/assets/js/modules/materialadmin/libs/utils/respond.min.js?1422823601"></script>
+<script type="text/javascript" src="/thm-material/libs/utils/html5shiv.js"></script>
+<script type="text/javascript" src="/thm-material/libs/utils/respond.min.js"></script>
 <![endif]-->
 
 <!-- BEGIN JAVASCRIPT -->
@@ -32,13 +32,12 @@
 <script type="text/javascript" src="/thm-material/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
 <script type="text/javascript" src="/thm-material/core/cache/63d0445130d69b2868a8d28c93309746.js"></script>
 <script type="text/javascript" src="/thm-material/core/demo/demo.js"></script>
-<script type="text/javascript" src="/thm-material/core/demo/demo-layouts.js"></script>
 <!-- END JAVASCRIPT -->
 </head>
 
 <body class="menubar-hoverable header-fixed menubar-pin menubar-first">
 
-<!-- BEGIN HEADER-->
+<!-- BEGIN HEADER -->
 <header id="header">
 					
 
@@ -171,18 +170,50 @@
 	<div id="base">
 		<!-- BEGIN OFFCANVAS LEFT -->
 		<div class="offcanvas">
-			 		</div><!--end .offcanvas-->
+				
+
+
+<!-- BEGIN OFFCANVAS DEMO LEFT -->
+<div id="offcanvas-demo-left" class="offcanvas-pane width-6">
+	<div class="offcanvas-head">
+		<header>Left off-canvas</header>
+		<div class="offcanvas-tools">
+			<a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas">
+				<i class="md md-close"></i>
+			</a>
+		</div>
+	</div>
+
+	<div class="offcanvas-body">
+		<p>
+			An off-canvas can hold any content you want.
+		</p>
+		<p>
+			Close this off-canvas by clicking on the backdrop or press the close button in the upper right corner.
+		</p>
+		<p>&nbsp;</p>
+		<h4>Some details</h4>
+		<ul class="list-divided">
+			<li><strong>Width</strong><br/><span class="opacity-75">240px</span></li>
+			<li><strong>Height</strong><br/><span class="opacity-75">100%</span></li>
+			<li><strong>Body scroll</strong><br/><span class="opacity-75">disabled</span></li>
+			<li><strong>Background color</strong><br/><span class="opacity-75">Default</span></li>
+		</ul>
+	</div>
+</div>
+<!-- END OFFCANVAS DEMO LEFT -->
+
+		</div><!--end .offcanvas-->
 		<!-- END OFFCANVAS LEFT -->
 
 		<!-- BEGIN CONTENT-->
 		<div id="content">
-			
-	<!-- BEGIN LIST SAMPLES -->
-	<section>
+				<section>
 		<div class="section-header">
 				<ol class="breadcrumb">
 									<li><a href="/thm-material/dashboards/dashboard.html">home</a></li>
-									<li class="active">Layouts</li>
+									<li>UI elements</li>
+									<li class="active">Off-canvas</li>
 						</ol>
 
 		</div>
@@ -191,210 +222,138 @@
 			<!-- BEGIN INTRO -->
 			<div class="row">
 				<div class="col-lg-12">
-					<h1 class="text-primary">Layouts</h1>
+					<h1 class="text-primary">Off-canvas</h1>
 				</div><!--end .col -->
 				<div class="col-lg-8">
 					<article class="margin-bottom-xxl">
 						<p class="lead">
-							Material Admin has several layout options that can be used for different purposes.
-							You can either choose between a full-width header or a full-height menubar.
-						</p>
-						<p class="lead">
-							Pin the menubar if you want to start with an expanded menubar.
-							When you choose an expanded menubar, it will automatically collapse on smaller screens.
+							Off-canvas layers slide in from either the left or the right.
+							They span the full height of the screen.
+							You can use multiple off-canvas displays per page.
 						</p>
 					</article>
 				</div><!--end .col -->
 			</div><!--end .row -->
 			<!-- END INTRO -->
 
-			<!-- BEGIN TILE CONTENT -->
+			<!-- BEGIN SECTION INTRO -->
 			<div class="row">
 				<div class="col-lg-12">
-					<h2 class="text-primary">Content</h2>
-				</div><!--end .col -->
-			</div><!--end .row -->
-			<!-- END TILE CONTENT -->
-
-			<!-- BEGIN LAYOUT - HEADER FULL WIDTH -->
-			<div class="row">
-				<div class="col-lg-12">
-					<h4>Full-width header</h4>
+					<h2 class="text-primary">Properties</h2>
 				</div>
 			</div><!--end .row -->
+			<!-- END SECTION INTRO -->
+
+			<!-- BEGIN POSITIONING -->
 			<div class="row">
-				<div class="col-lg-3 col-md-4  col-sm-12">
+				<div class="col-lg-12">
+					<h4>Positioning</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
 					<article class="margin-bottom-xxl">
 						<p>
-							In this layout, the header extends over the entire width of the screen.
-							Below the header is the menubar.
+							You can place an off-canvas either on the left or the right side off the screen.
 						</p>
 					</article>
 				</div><!--end .col -->
-				<div class="col-lg-offset-1 col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-default-light">
-							<div class="height-1 style-default-bright"></div>
-							<div class="row">
-								<div class="col-xs-3">
-									<div class="height-5 style-gray-bright"></div>
-								</div>
-								<div class="col-xs-9"></div>
-							</div>
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<a class="btn btn-raised ink-reaction btn-default-bright" href="#offcanvas-demo-left" data-toggle="offcanvas">
+								<i class="md md-arrow-back"></i>
+								Open left off-canvas
+							</a>
+							<a class="btn btn-raised ink-reaction btn-default-bright pull-right" href="#offcanvas-demo-right" data-toggle="offcanvas">
+								Open right off-canvas
+								<i class="md md-arrow-forward"></i>
+							</a>
 						</div><!--end .card-body -->
 					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="1">Activate</a>
-						<ul class="text-caption">
-							<li>Expanded menubar</li>
-							<li><strong>Full-width header</strong></li>
-							<li>Fixed header</li>
-						</ul>
-					</div><!--end .holder -->
-				</div><!--end .col -->
-				<div class="col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-default-light">
-							<div class="height-1 style-default-bright"></div>
-							<div class="row">
-								<div class="col-xs-1">
-									<div class="height-5 style-gray-bright"></div>
-								</div>
-								<div class="col-xs-11"></div>
-							</div>
-						</div><!--end .card-body -->
-					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="2">Activate</a>
-						<ul class="text-caption">
-							<li>Collapsed menubar</li>
-							<li><strong>Full-width header</strong></li>
-							<li>Fixed header</li>
-						</ul>
-					</div><!--end .holder -->
 				</div><!--end .col -->
 			</div><!--end .row -->
-			<!-- END LAYOUT - HEADER FULL WIDTH -->
-
-			<!-- BEGIN LAYOUT - MENUBAR FULL HEIGHT -->
-			<div class="row">
-				<div class="col-lg-12">
-					<h4>Full-height menubar</h4>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-12">
-					<article class="margin-bottom-xxl">
-						<p>
-							In this layout, the menubar extends over the entire height of the screen.
-						</p>
-					</article>
-				</div><!--end .col -->
-				<div class="col-lg-offset-1 col-md-4 col-sm-6">
-					<div class="card card-outlined style-accent">
-						<div class="card-body no-padding card-tiles style-default-light">
-							<div class="row">
-								<div class="col-xs-3">
-									<div class="height-6 style-gray-bright"></div>
-								</div>
-								<div class="col-xs-9">
-									<div class="height-1 style-default-bright"></div>
-								</div>
-							</div>
-						</div><!--end .card-body -->
-					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton disabled" data-layout="3">Activated</a>
-						<ul class="text-caption">
-							<li>Expanded menubar</li>
-							<li><strong>Full-height menubar</strong></li>
-							<li>Fixed header</li>
-						</ul>
-					</div><!--end .holder -->
-				</div><!--end .col -->
-				<div class="col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-default-light">
-							<div class="row">
-								<div class="col-xs-1">
-									<div class="height-6 style-gray-bright"></div>
-								</div>
-								<div class="col-xs-11">
-									<div class="height-1 style-default-bright"></div>
-								</div>
-							</div>
-						</div><!--end .card-body -->
-					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="4">Activate</a>
-						<ul class="text-caption">
-							<li>Collapsed menubar</li>
-							<li><strong>Full-height menubar</strong></li>
-							<li>Fixed header</li>
-						</ul>
-					</div><!--end .holder -->
-				</div><!--end .col -->
-			</div><!--end .row -->
-			<!-- END LAYOUT - MENUBAR FULL HEIGHT -->
+			<!-- END POSITIONING -->
 			
-			<!-- BEGIN LAYOUT - STATIC HEADER -->
+			<!-- BEGIN SIZE -->
 			<div class="row">
 				<div class="col-lg-12">
-					<h4>Static header</h4>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-12">
+					<h4>Size</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
 					<article class="margin-bottom-xxl">
 						<p>
-							If you do not want to have a fixed header, you simpe remove the <code>.header-fixed</code> class.
+							An off-canvas can have any size.
+							Material Admin has a number of standard sizes you can choose, but you can also set the width in a style attribute for easy customization.
 						</p>
 					</article>
 				</div><!--end .col -->
-				<div class="col-lg-offset-1 col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-gray-bright">
-							<div class="row">
-								<div class="col-xs-3"></div>
-								<div class="col-xs-9 ">
-									<div class="border-black border-dashed"><div class="style-default-bright height-1"></div></div>
-									<div class="height-5 style-default-light"></div>
-								</div>
-							</div>
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<a class="btn btn-raised ink-reaction btn-default-bright" href="#offcanvas-demo-size1" data-toggle="offcanvas">Size 1</a>
+							<a class="btn btn-raised ink-reaction btn-default-bright" href="#offcanvas-demo-size2" data-toggle="offcanvas">Size 2</a>
+							<a class="btn btn-raised ink-reaction btn-default-bright" href="#offcanvas-demo-size3" data-toggle="offcanvas">Size 3</a>
+							<a class="btn btn-raised ink-reaction btn-default-bright" href="#offcanvas-demo-size4" data-toggle="offcanvas">Size 4</a>
 						</div><!--end .card-body -->
 					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="5">Activate</a>
-						<ul class="text-caption">
-							<li>Expanded menubar</li>
-							<li>Full-height menubar</li>
-							<li><strong>Static header</strong></li>
-						</ul>
-					</div><!--end .holder -->
-				</div><!--end .col -->
-				<div class="col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-gray-bright">
-							<div class="row">
-								<div class="col-xs-1"></div>
-								<div class="col-xs-11 ">
-									<div class="border-black border-dashed"><div class="style-default-bright height-1"></div></div>
-									<div class="height-5 style-default-light"></div>
-								</div>
-							</div>
-						</div><!--end .card-body -->
-					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="6">Activate</a>
-						<ul class="text-caption">
-							<li>Collapsed menubar</li>
-							<li>Full-height menubar</li>
-							<li><strong>Static header</strong></li>
-						</ul>
-					</div><!--end .holder -->
+					<em class="text-caption">Some sizes as an example</em>
 				</div><!--end .col -->
 			</div><!--end .row -->
-			<!-- END LAYOUT - STATIC HEADER -->
+			<!-- END SIZE -->
+			
+			<!-- BEGIN COLORS -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h4>Colors</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>
+							Every color that is available for a card, is also available for an off-canvas.
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<a class="btn btn-raised ink-reaction btn-primary" href="#offcanvas-demo-color1" data-toggle="offcanvas" data-backdrop="false">Color 1</a>
+							<a class="btn btn-raised ink-reaction btn-accent-dark" href="#offcanvas-demo-color2" data-toggle="offcanvas" data-backdrop="false">Color 2</a>
+							<a class="btn btn-raised ink-reaction btn-info" href="#offcanvas-demo-color3" data-toggle="offcanvas" data-backdrop="false">Color 3</a>
+							<a class="btn btn-raised ink-reaction btn-default-dark" href="#offcanvas-demo-color4" data-toggle="offcanvas" data-backdrop="false">Color 4</a>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Basic headings</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END COLORS -->
+			
+			<!-- BEGIN BACKDROP -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h4>Backdrop</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>
+							A backdrop is a layer on top of the content.
+							This layer is clickable so that the off-canvas is closed.
+							You can disable the backdrop by adding <code>data-backdrop="false"</code>.
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<a class="btn btn-raised ink-reaction btn-default-bright" href="#offcanvas-demo-backdrop" data-toggle="offcanvas">With backdrop</a>
+							<a class="btn btn-raised ink-reaction btn-default-bright" href="#offcanvas-demo-nobackdrop" data-toggle="offcanvas" data-backdrop="false">Without backdrop</a>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Basic headings</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END BACKDROP -->
 			
 		</div><!--end .section-body -->
 	</section>
-
 		</div><!--end #content-->		
 		<!-- END CONTENT -->
 
@@ -450,7 +409,7 @@
 	
 	<!-- BEGIN DASHBOARD -->
 	<li>
-		<a href="/thm-material/layouts/builder.html" class="active">
+		<a href="/thm-material/layouts/builder.html" >
 			<div class="gui-icon"><i class="md md-web"></i></div>
 			<span class="title">Layouts</span>
 		</a>
@@ -481,7 +440,7 @@
 
 			<li><a href="/thm-material/ui/messages.html" ><span class="title">Messages</span></a></li>
 
-			<li><a href="/thm-material/ui/offcanvas.html" ><span class="title">Off-canvas</span></a></li>
+			<li><a href="/thm-material/ui/offcanvas.html" class="active"><span class="title">Off-canvas</span></a></li>
 
 			<li><a href="http://www.codecovers.eu/materialadmin/ui/grid" ><span class="title">Grid</span></a></li>
 
@@ -949,7 +908,402 @@
 </div><!--end .offcanvas-pane -->
 <!-- END OFFCANVAS CHAT -->
 
-			 		</div><!--end .offcanvas-->
+				
+	
+
+
+<!-- BEGIN OFFCANVAS DEMO RIGHT -->
+<div id="offcanvas-demo-right" class="offcanvas-pane width-6">
+	<div class="offcanvas-head">
+		<header>Right off-canvas</header>
+		<div class="offcanvas-tools">
+			<a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas">
+				<i class="md md-close"></i>
+			</a>
+		</div>
+	</div>
+
+	<div class="offcanvas-body">
+		<p>
+			An off-canvas can hold any content you want.
+		</p>
+		<p>
+			Close this off-canvas by clicking on the backdrop or press the close button in the upper right corner.
+		</p>
+		<p>&nbsp;</p>
+		<h4>Some details</h4>
+		<ul class="list-divided">
+			<li><strong>Width</strong><br/><span class="opacity-75">240px</span></li>
+			<li><strong>Height</strong><br/><span class="opacity-75">100%</span></li>
+			<li><strong>Body scroll</strong><br/><span class="opacity-75">disabled</span></li>
+			<li><strong>Background color</strong><br/><span class="opacity-75">Default</span></li>
+		</ul>
+	</div>
+</div>
+<!-- END OFFCANVAS DEMO RIGHT -->
+
+	
+
+
+<!-- BEGIN OFFCANVAS DEMO RIGHT -->
+<div id="offcanvas-demo-size1" class="offcanvas-pane width-4">
+	<div class="offcanvas-head">
+		<header>Size 1</header>
+		<div class="offcanvas-tools">
+			<a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas">
+				<i class="md md-close"></i>
+			</a>
+		</div>
+	</div>
+
+	<div class="offcanvas-body">
+		<p>
+			An off-canvas can hold any content you want.
+		</p>
+		<p>
+			Close this off-canvas by clicking on the backdrop or press the close button in the upper right corner.
+		</p>
+		<p>&nbsp;</p>
+		<h4>Some details</h4>
+		<ul class="list-divided">
+			<li><strong>Width</strong><br/><span class="opacity-75">160px</span></li>
+			<li><strong>Height</strong><br/><span class="opacity-75">100%</span></li>
+			<li><strong>Body scroll</strong><br/><span class="opacity-75">disabled</span></li>
+			<li><strong>Background color</strong><br/><span class="opacity-75">Default</span></li>
+		</ul>
+	</div>
+	
+	<div class="force-padding stick-bottom-right">
+		<a class="btn btn-floating-action btn-accent " href="#offcanvas-demo-size2" data-toggle="offcanvas">
+			<i class="md md-arrow-forward"></i>
+		</a>
+	</div>
+	
+</div>
+<!-- END OFFCANVAS DEMO RIGHT -->
+
+	
+
+
+<!-- BEGIN OFFCANVAS DEMO RIGHT -->
+<div id="offcanvas-demo-size2" class="offcanvas-pane width-7">
+	<div class="offcanvas-head">
+		<header>Size 2</header>
+		<div class="offcanvas-tools">
+			<a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas">
+				<i class="md md-close"></i>
+			</a>
+		</div>
+	</div>
+
+	<div class="offcanvas-body">
+		<p>
+			An off-canvas can hold any content you want.
+		</p>
+		<p>
+			Close this off-canvas by clicking on the backdrop or press the close button in the upper right corner.
+		</p>
+		<p>&nbsp;</p>
+		<h4>Some details</h4>
+		<ul class="list-divided">
+			<li><strong>Width</strong><br/><span class="opacity-75">280px</span></li>
+			<li><strong>Height</strong><br/><span class="opacity-75">100%</span></li>
+			<li><strong>Body scroll</strong><br/><span class="opacity-75">disabled</span></li>
+			<li><strong>Background color</strong><br/><span class="opacity-75">Default</span></li>
+		</ul>
+	</div>
+	
+	<div class="force-padding stick-bottom-right">
+		<a class="btn btn-icon-toggle btn-accent " href="#offcanvas-demo-size1" data-toggle="offcanvas">
+			<i class="md md-arrow-back"></i>
+		</a>
+		<a class="btn btn-floating-action btn-accent " href="#offcanvas-demo-size3" data-toggle="offcanvas">
+			<i class="md md-arrow-forward"></i>
+		</a>
+	</div>
+</div>
+<!-- END OFFCANVAS DEMO RIGHT -->
+
+	
+
+
+<!-- BEGIN OFFCANVAS DEMO RIGHT -->
+<div id="offcanvas-demo-size3" class="offcanvas-pane width-10">
+	<div class="offcanvas-head">
+		<header>Size 3</header>
+		<div class="offcanvas-tools">
+			<a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas">
+				<i class="md md-close"></i>
+			</a>
+		</div>
+	</div>
+
+	<div class="offcanvas-body">
+		<p>
+			An off-canvas can hold any content you want.
+		</p>
+		<p>
+			Close this off-canvas by clicking on the backdrop or press the close button in the upper right corner.
+		</p>
+		<p>&nbsp;</p>
+		<h4>Some details</h4>
+		<ul class="list-divided">
+			<li><strong>Width</strong><br/><span class="opacity-75">400px</span></li>
+			<li><strong>Height</strong><br/><span class="opacity-75">100%</span></li>
+			<li><strong>Body scroll</strong><br/><span class="opacity-75">disabled</span></li>
+			<li><strong>Background color</strong><br/><span class="opacity-75">Default</span></li>
+		</ul>
+	</div>
+	
+	<div class="force-padding stick-bottom-right">
+		<a class="btn btn-icon-toggle btn-accent " href="#offcanvas-demo-size2" data-toggle="offcanvas">
+			<i class="md md-arrow-back"></i>
+		</a>
+		<a class="btn btn-floating-action btn-accent " href="#offcanvas-demo-size4" data-toggle="offcanvas">
+			<i class="md md-arrow-forward"></i>
+		</a>
+	</div>
+</div>
+<!-- END OFFCANVAS DEMO RIGHT -->
+
+	
+
+
+<!-- BEGIN OFFCANVAS DEMO RIGHT -->
+<div id="offcanvas-demo-size4" class="offcanvas-pane width-12" style="width:800px">
+	<div class="offcanvas-head">
+		<header>Size 4</header>
+		<div class="offcanvas-tools">
+			<a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas">
+				<i class="md md-close"></i>
+			</a>
+		</div>
+	</div>
+
+	<div class="offcanvas-body">
+		<p>
+			An off-canvas can hold any content you want.
+		</p>
+		<p>
+			Close this off-canvas by clicking on the backdrop or press the close button in the upper right corner.
+		</p>
+		<p>&nbsp;</p>
+		<h4>Some details</h4>
+		<ul class="list-divided">
+			<li><strong>Width</strong><br/><span class="opacity-75">800px</span></li>
+			<li><strong>Height</strong><br/><span class="opacity-75">100%</span></li>
+			<li><strong>Body scroll</strong><br/><span class="opacity-75">disabled</span></li>
+			<li><strong>Background color</strong><br/><span class="opacity-75">Default</span></li>
+		</ul>
+	</div>
+	
+	<div class="force-padding stick-bottom-right">
+		<a class="btn btn-floating-action btn-accent " href="#offcanvas-demo-size3" data-toggle="offcanvas">
+			<i class="md md-arrow-back"></i>
+		</a>
+	</div>
+</div>
+<!-- END OFFCANVAS DEMO RIGHT -->
+
+	
+
+
+<!-- BEGIN OFFCANVAS DEMO RIGHT -->
+<div id="offcanvas-demo-color1" class="offcanvas-pane style-primary width-8">
+	<div class="offcanvas-head">
+		<header>Color 1</header>
+		<div class="offcanvas-tools">
+			<a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas">
+				<i class="md md-close"></i>
+			</a>
+		</div>
+	</div>
+
+	<div class="offcanvas-body">
+		<p>
+			Every color that is available for a card, is also available for an off-canvas.
+		</p>
+		<p>
+			Close this off-canvas by clicking on the backdrop or press the close button in the upper right corner.
+		</p>
+		<p>&nbsp;</p>
+		<h4>Some details</h4>
+		<ul class="list-divided">
+			<li><strong>Width</strong><br/><span class="opacity-75">320px</span></li>
+			<li><strong>Height</strong><br/><span class="opacity-75">100%</span></li>
+			<li><strong>Body scroll</strong><br/><span class="opacity-75">disabled</span></li>
+			<li><strong>Background color</strong><br/><span class="opacity-75">Primary</span></li>
+		</ul>
+	</div>
+</div>
+<!-- END OFFCANVAS DEMO RIGHT -->
+
+	
+
+
+<!-- BEGIN OFFCANVAS DEMO RIGHT -->
+<div id="offcanvas-demo-color2" class="offcanvas-pane style-accent-dark width-8">
+	<div class="offcanvas-head">
+		<header>Color 2</header>
+		<div class="offcanvas-tools">
+			<a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas">
+				<i class="md md-close"></i>
+			</a>
+		</div>
+	</div>
+
+	<div class="offcanvas-body">
+		<p>
+			Every color that is available for a card, is also available for an off-canvas.
+		</p>
+		<p>
+			Close this off-canvas by clicking on the backdrop or press the close button in the upper right corner.
+		</p>
+		<p>&nbsp;</p>
+		<h4>Some details</h4>
+		<ul class="list-divided">
+			<li><strong>Width</strong><br/><span class="opacity-75">320px</span></li>
+			<li><strong>Height</strong><br/><span class="opacity-75">100%</span></li>
+			<li><strong>Body scroll</strong><br/><span class="opacity-75">disabled</span></li>
+			<li><strong>Background color</strong><br/><span class="opacity-75">Accent (dark)</span></li>
+		</ul>
+	</div>
+</div>
+<!-- END OFFCANVAS DEMO RIGHT -->
+
+	
+
+
+<!-- BEGIN OFFCANVAS DEMO RIGHT -->
+<div id="offcanvas-demo-color3" class="offcanvas-pane style-info width-8">
+	<div class="offcanvas-head">
+		<header>Color 3</header>
+		<div class="offcanvas-tools">
+			<a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas">
+				<i class="md md-close"></i>
+			</a>
+		</div>
+	</div>
+
+	<div class="offcanvas-body">
+		<p>
+			Every color that is available for a card, is also available for an off-canvas.
+		</p>
+		<p>
+			Close this off-canvas by clicking on the backdrop or press the close button in the upper right corner.
+		</p>
+		<p>&nbsp;</p>
+		<h4>Some details</h4>
+		<ul class="list-divided">
+			<li><strong>Width</strong><br/><span class="opacity-75">320px</span></li>
+			<li><strong>Height</strong><br/><span class="opacity-75">100%</span></li>
+			<li><strong>Body scroll</strong><br/><span class="opacity-75">disabled</span></li>
+			<li><strong>Background color</strong><br/><span class="opacity-75">Info</span></li>
+		</ul>
+	</div>
+</div>
+<!-- END OFFCANVAS DEMO RIGHT -->
+
+	
+
+
+<!-- BEGIN OFFCANVAS DEMO RIGHT -->
+<div id="offcanvas-demo-color4" class="offcanvas-pane style-default-dark width-8">
+	<div class="offcanvas-head">
+		<header>Color 4</header>
+		<div class="offcanvas-tools">
+			<a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas">
+				<i class="md md-close"></i>
+			</a>
+		</div>
+	</div>
+
+	<div class="offcanvas-body">
+		<p>
+			Every color that is available for a card, is also available for an off-canvas.
+		</p>
+		<p>
+			Close this off-canvas by clicking on the backdrop or press the close button in the upper right corner.
+		</p>
+		<p>&nbsp;</p>
+		<h4>Some details</h4>
+		<ul class="list-divided">
+			<li><strong>Width</strong><br/><span class="opacity-75">320px</span></li>
+			<li><strong>Height</strong><br/><span class="opacity-75">100%</span></li>
+			<li><strong>Body scroll</strong><br/><span class="opacity-75">disabled</span></li>
+			<li><strong>Background color</strong><br/><span class="opacity-75">Default (dark)</span></li>
+		</ul>
+	</div>
+</div>
+<!-- END OFFCANVAS DEMO RIGHT -->
+
+	
+
+
+<!-- BEGIN OFFCANVAS DEMO RIGHT -->
+<div id="offcanvas-demo-backdrop" class="offcanvas-pane width-6">
+	<div class="offcanvas-head">
+		<header>With backdrop</header>
+		<div class="offcanvas-tools">
+			<a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas">
+				<i class="md md-close"></i>
+			</a>
+		</div>
+	</div>
+
+	<div class="offcanvas-body">
+		<p>
+			An off-canvas can hold any content you want.
+		</p>
+		<p>
+			Close this off-canvas by clicking on the backdrop or press the close button in the upper right corner.
+		</p>
+		<p>&nbsp;</p>
+		<h4>Some details</h4>
+		<ul class="list-divided">
+			<li><strong>Width</strong><br/><span class="opacity-75">240px</span></li>
+			<li><strong>Height</strong><br/><span class="opacity-75">100%</span></li>
+			<li><strong>Body scroll</strong><br/><span class="opacity-75">disabled</span></li>
+			<li><strong>Background color</strong><br/><span class="opacity-75">Default</span></li>
+		</ul>
+	</div>
+</div>
+<!-- END OFFCANVAS DEMO RIGHT -->
+
+	
+
+
+<!-- BEGIN OFFCANVAS DEMO RIGHT -->
+<div id="offcanvas-demo-nobackdrop" class="offcanvas-pane width-6">
+	<div class="offcanvas-head">
+		<header>No backdrop</header>
+		<div class="offcanvas-tools">
+			<a class="btn btn-icon-toggle btn-default-light pull-right" data-dismiss="offcanvas">
+				<i class="md md-close"></i>
+			</a>
+		</div>
+	</div>
+
+	<div class="offcanvas-body">
+		<p>
+			An off-canvas can hold any content you want.
+		</p>
+		<p>
+			Close this off-canvas by clicking on the backdrop or press the close button in the upper right corner.
+		</p>
+		<p>&nbsp;</p>
+		<h4>Some details</h4>
+		<ul class="list-divided">
+			<li><strong>Width</strong><br/><span class="opacity-75">240px</span></li>
+			<li><strong>Height</strong><br/><span class="opacity-75">100%</span></li>
+			<li><strong>Body scroll</strong><br/><span class="opacity-75">disabled</span></li>
+			<li><strong>Background color</strong><br/><span class="opacity-75">Default</span></li>
+		</ul>
+	</div>
+</div>
+<!-- END OFFCANVAS DEMO RIGHT -->
+
+		</div><!--end .offcanvas-->
 		<!-- END OFFCANVAS RIGHT -->
 
 	</div><!--end #base-->	

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Material Admin - Layouts</title>
+<title>Material Admin - Tabs</title>
 <!-- BEGIN META -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,8 +19,8 @@
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-<script type="text/javascript" src="http://www.codecovers.eu/assets/js/modules/materialadmin/libs/utils/html5shiv.js?1422823601"></script>
-<script type="text/javascript" src="http://www.codecovers.eu/assets/js/modules/materialadmin/libs/utils/respond.min.js?1422823601"></script>
+<script type="text/javascript" src="/thm-material/libs/utils/html5shiv.js"></script>
+<script type="text/javascript" src="/thm-material/libs/utils/respond.min.js"></script>
 <![endif]-->
 
 <!-- BEGIN JAVASCRIPT -->
@@ -32,13 +32,12 @@
 <script type="text/javascript" src="/thm-material/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
 <script type="text/javascript" src="/thm-material/core/cache/63d0445130d69b2868a8d28c93309746.js"></script>
 <script type="text/javascript" src="/thm-material/core/demo/demo.js"></script>
-<script type="text/javascript" src="/thm-material/core/demo/demo-layouts.js"></script>
 <!-- END JAVASCRIPT -->
 </head>
 
 <body class="menubar-hoverable header-fixed menubar-pin menubar-first">
 
-<!-- BEGIN HEADER-->
+<!-- BEGIN HEADER -->
 <header id="header">
 					
 
@@ -176,13 +175,12 @@
 
 		<!-- BEGIN CONTENT-->
 		<div id="content">
-			
-	<!-- BEGIN LIST SAMPLES -->
-	<section>
+				<section>
 		<div class="section-header">
 				<ol class="breadcrumb">
 									<li><a href="/thm-material/dashboards/dashboard.html">home</a></li>
-									<li class="active">Layouts</li>
+									<li>UI elements</li>
+									<li class="active">Tabs</li>
 						</ol>
 
 		</div>
@@ -191,210 +189,487 @@
 			<!-- BEGIN INTRO -->
 			<div class="row">
 				<div class="col-lg-12">
-					<h1 class="text-primary">Layouts</h1>
+					<h1 class="text-primary">Tabs</h1>
 				</div><!--end .col -->
 				<div class="col-lg-8">
 					<article class="margin-bottom-xxl">
 						<p class="lead">
-							Material Admin has several layout options that can be used for different purposes.
-							You can either choose between a full-width header or a full-height menubar.
-						</p>
-						<p class="lead">
-							Pin the menubar if you want to start with an expanded menubar.
-							When you choose an expanded menubar, it will automatically collapse on smaller screens.
+							Tabs make it easy to explore and switch between different views or functional aspects of an app or to browse categorized data sets.
 						</p>
 					</article>
 				</div><!--end .col -->
 			</div><!--end .row -->
 			<!-- END INTRO -->
 
-			<!-- BEGIN TILE CONTENT -->
+			<!-- BEGIN LAYOUT - ALIGNMENT  -->
 			<div class="row">
 				<div class="col-lg-12">
-					<h2 class="text-primary">Content</h2>
+					<h2 class="text-primary">Layout</h2>
+				</div><!--end .col -->
+				<div class="col-lg-12">
+					<h4>Alignment</h4>
+				</div><!--end .col -->
+				<div class="col-md-8">
+					<article class="margin-bottom-xxl">
+						<p>
+							You can align the tabs to the left, right, centered and justified.
+							By default the tabs are left aligned in the header.
+						</p>
+					</article>
 				</div><!--end .col -->
 			</div><!--end .row -->
-			<!-- END TILE CONTENT -->
+			<!-- END LAYOUT - ALIGNMENT -->
 
-			<!-- BEGIN LAYOUT - HEADER FULL WIDTH -->
 			<div class="row">
-				<div class="col-lg-12">
-					<h4>Full-width header</h4>
-				</div>
-			</div><!--end .row -->
-			<div class="row">
-				<div class="col-lg-3 col-md-4  col-sm-12">
-					<article class="margin-bottom-xxl">
-						<p>
-							In this layout, the header extends over the entire width of the screen.
-							Below the header is the menubar.
-						</p>
-					</article>
-				</div><!--end .col -->
-				<div class="col-lg-offset-1 col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-default-light">
-							<div class="height-1 style-default-bright"></div>
-							<div class="row">
-								<div class="col-xs-3">
-									<div class="height-5 style-gray-bright"></div>
-								</div>
-								<div class="col-xs-9"></div>
-							</div>
-						</div><!--end .card-body -->
-					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="1">Activate</a>
-						<ul class="text-caption">
-							<li>Expanded menubar</li>
-							<li><strong>Full-width header</strong></li>
-							<li>Fixed header</li>
-						</ul>
-					</div><!--end .holder -->
-				</div><!--end .col -->
-				<div class="col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-default-light">
-							<div class="height-1 style-default-bright"></div>
-							<div class="row">
-								<div class="col-xs-1">
-									<div class="height-5 style-gray-bright"></div>
-								</div>
-								<div class="col-xs-11"></div>
-							</div>
-						</div><!--end .card-body -->
-					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="2">Activate</a>
-						<ul class="text-caption">
-							<li>Collapsed menubar</li>
-							<li><strong>Full-width header</strong></li>
-							<li>Fixed header</li>
-						</ul>
-					</div><!--end .holder -->
-				</div><!--end .col -->
-			</div><!--end .row -->
-			<!-- END LAYOUT - HEADER FULL WIDTH -->
 
-			<!-- BEGIN LAYOUT - MENUBAR FULL HEIGHT -->
+				<!-- BEGIN LAYOUT LEFT ALIGNED -->
+				<div class="col-md-6">
+					<div class="card">
+												<div class="card-head">
+							<ul class="nav nav-tabs" data-toggle="tabs">
+								<li class="active"><a href="#first1">FIRST TAB</a></li>
+								<li><a href="#second1">NO. TWO</a></li>
+								<li><a href="#third1">THE THIRD</a></li>
+							</ul>
+						</div><!--end .card-head -->
+						<div class="card-body tab-content">
+							<div class="tab-pane active" id="first1">						<p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
+			</div>
+							<div class="tab-pane" id="second1">						<p>Ad ius duis dissentiunt, an sit harum primis persecuti, adipisci tacimates mediocrem sit et. Id illud voluptaria omittantur qui, te affert nostro mel. Cu conceptam vituperata temporibus has.</p>
+			</div>
+							<div class="tab-pane" id="third1">						<p>Duo semper accumsan ea, quidam convenire cum cu, oportere maiestatis incorrupte est eu. Soluta audiam timeam ius te, idque gubergren forensibus ad mel, persius urbanitas usu id. Civibus nostrum fabellas mea te, ne pri lucilius iudicabit. Ut cibo semper vituperatoribus vix, cum in error elitr. Vix molestiae intellegat omittantur an, nam cu modo ullum scriptorem.</p>
+			<p>Quod option numquam vel in, et fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Dicant vituperata consequuntur at sea, mazim commodo</p>
+			</div>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Left aligned tabs</em>
+				</div><!--end .col -->
+				<!-- END LAYOUT LEFT ALIGNED -->
+
+				<!-- BEGIN LAYOUT RIGHT ALIGNED -->
+				<div class="col-md-6">
+					<div class="card card-underline">
+												<div class="card-head">
+							<ul class="nav nav-tabs pull-right" data-toggle="tabs">
+								<li class="active"><a href="#first2">FIRST TAB</a></li>
+								<li><a href="#second2">NO. TWO</a></li>
+								<li><a href="#third2">THE THIRD</a></li>
+							</ul>
+							<header>Title</header>
+						</div>
+						<div class="card-body tab-content">
+							<div class="tab-pane active" id="first2">						<p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
+			</div>
+							<div class="tab-pane" id="second2">						<p>Ad ius duis dissentiunt, an sit harum primis persecuti, adipisci tacimates mediocrem sit et. Id illud voluptaria omittantur qui, te affert nostro mel. Cu conceptam vituperata temporibus has.</p>
+			</div>
+							<div class="tab-pane" id="third2">						<p>Duo semper accumsan ea, quidam convenire cum cu, oportere maiestatis incorrupte est eu. Soluta audiam timeam ius te, idque gubergren forensibus ad mel, persius urbanitas usu id. Civibus nostrum fabellas mea te, ne pri lucilius iudicabit. Ut cibo semper vituperatoribus vix, cum in error elitr. Vix molestiae intellegat omittantur an, nam cu modo ullum scriptorem.</p>
+			<p>Quod option numquam vel in, et fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Dicant vituperata consequuntur at sea, mazim commodo</p>
+			</div>
+						</div>
+					</div><!--end .card -->
+					<em class="text-caption">Right aligned tabs</em>
+				</div><!--end .col -->
+				<!-- END LAYOUT RIGHT ALIGNED -->
+
+			</div><!--end .row -->
+			<div class="row">
+
+				<!-- BEGIN LAYOUT CENTERED -->
+				<div class="col-md-6">
+					<div class="card">
+												<div class="card-head">
+							<ul class="nav nav-tabs tabs-center" data-toggle="tabs">
+								<li class="active"><a href="#first3">FIRST TAB</a></li>
+								<li><a href="#second3">NO. TWO</a></li>
+								<li><a href="#third3">THE THIRD</a></li>
+							</ul>
+						</div><!--end .card-head -->
+						<div class="card-body tab-content">
+							<div class="tab-pane active" id="first3">						<p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
+			</div>
+							<div class="tab-pane" id="second3">						<p>Ad ius duis dissentiunt, an sit harum primis persecuti, adipisci tacimates mediocrem sit et. Id illud voluptaria omittantur qui, te affert nostro mel. Cu conceptam vituperata temporibus has.</p>
+			</div>
+							<div class="tab-pane" id="third3">						<p>Duo semper accumsan ea, quidam convenire cum cu, oportere maiestatis incorrupte est eu. Soluta audiam timeam ius te, idque gubergren forensibus ad mel, persius urbanitas usu id. Civibus nostrum fabellas mea te, ne pri lucilius iudicabit. Ut cibo semper vituperatoribus vix, cum in error elitr. Vix molestiae intellegat omittantur an, nam cu modo ullum scriptorem.</p>
+			<p>Quod option numquam vel in, et fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Dicant vituperata consequuntur at sea, mazim commodo</p>
+			</div>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Centered tabs</em>
+				</div><!--end .col -->
+				<!-- END LAYOUT CENTERED -->
+
+				<!-- BEGIN LAYOUT JUSTIFIED -->
+				<div class="col-md-6">
+					<div class="card">
+												<div class="card-head">
+							<ul class="nav nav-tabs nav-justified" data-toggle="tabs">
+								<li class="active"><a href="#first4">FIRST TAB</a></li>
+								<li><a href="#second4">NO. TWO</a></li>
+								<li><a href="#third4">THE THIRD</a></li>
+							</ul>
+						</div><!--end .card-head -->
+						<div class="card-body tab-content">
+							<div class="tab-pane active" id="first4">						<p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
+			</div>
+							<div class="tab-pane" id="second4">						<p>Ad ius duis dissentiunt, an sit harum primis persecuti, adipisci tacimates mediocrem sit et. Id illud voluptaria omittantur qui, te affert nostro mel. Cu conceptam vituperata temporibus has.</p>
+			</div>
+							<div class="tab-pane" id="third4">						<p>Duo semper accumsan ea, quidam convenire cum cu, oportere maiestatis incorrupte est eu. Soluta audiam timeam ius te, idque gubergren forensibus ad mel, persius urbanitas usu id. Civibus nostrum fabellas mea te, ne pri lucilius iudicabit. Ut cibo semper vituperatoribus vix, cum in error elitr. Vix molestiae intellegat omittantur an, nam cu modo ullum scriptorem.</p>
+			<p>Quod option numquam vel in, et fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Dicant vituperata consequuntur at sea, mazim commodo</p>
+			</div>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Justified tabs</em>
+				</div><!--end .col -->
+				<!-- END LAYOUT JUSTIFIED -->
+
+			</div><!--end .row -->
+
+			<!-- BEGIN LAYOUT - PLACEMENT  -->
 			<div class="row">
 				<div class="col-lg-12">
-					<h4>Full-height menubar</h4>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-12">
+					<h4>Placement</h4>
+				</div><!--end .col -->
+				<div class="col-md-8">
 					<article class="margin-bottom-xxl">
 						<p>
-							In this layout, the menubar extends over the entire height of the screen.
+							Tabs can not only be placed above the content, but also left, right and below the content.
 						</p>
 					</article>
 				</div><!--end .col -->
-				<div class="col-lg-offset-1 col-md-4 col-sm-6">
-					<div class="card card-outlined style-accent">
-						<div class="card-body no-padding card-tiles style-default-light">
-							<div class="row">
-								<div class="col-xs-3">
-									<div class="height-6 style-gray-bright"></div>
-								</div>
-								<div class="col-xs-9">
-									<div class="height-1 style-default-bright"></div>
-								</div>
-							</div>
-						</div><!--end .card-body -->
-					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton disabled" data-layout="3">Activated</a>
-						<ul class="text-caption">
-							<li>Expanded menubar</li>
-							<li><strong>Full-height menubar</strong></li>
-							<li>Fixed header</li>
-						</ul>
-					</div><!--end .holder -->
-				</div><!--end .col -->
-				<div class="col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-default-light">
-							<div class="row">
-								<div class="col-xs-1">
-									<div class="height-6 style-gray-bright"></div>
-								</div>
-								<div class="col-xs-11">
-									<div class="height-1 style-default-bright"></div>
-								</div>
-							</div>
-						</div><!--end .card-body -->
-					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="4">Activate</a>
-						<ul class="text-caption">
-							<li>Collapsed menubar</li>
-							<li><strong>Full-height menubar</strong></li>
-							<li>Fixed header</li>
-						</ul>
-					</div><!--end .holder -->
-				</div><!--end .col -->
 			</div><!--end .row -->
-			<!-- END LAYOUT - MENUBAR FULL HEIGHT -->
+			<!-- END LAYOUT - PLACEMENT -->
+
+			<div class="row">
+
+				<!-- BEGIN LAYOUT LEFT SIDEBAR -->
+				<div class="col-md-6">
+					<div class="card tabs-left style-default-light">
+												<ul class="card-head nav nav-tabs" data-toggle="tabs">
+							<li><a href="#first5">FIRST TAB</a></li>
+							<li class="active"><a href="#second5">NO. TWO</a></li>
+							<li><a href="#third5">THE THIRD</a></li>
+						</ul>
+						<div class="card-body tab-content style-default-bright">
+							<div class="tab-pane" id="first5">			<h3 class="text-light">Daniel <strong>Johnson</strong></h3>
+								<p>Ad ius duis dissentiunt, an sit harum primis persecuti, adipisci tacimates mediocrem sit et. Id illud voluptaria omittantur qui, te affert nostro mel. Cu conceptam vituperata temporibus has.</p>
 			
-			<!-- BEGIN LAYOUT - STATIC HEADER -->
+		<dl class="dl-horizontal">
+			<dt>Description lists</dt>
+			<dd>A description list is perfect for defining terms.</dd>
+			<dt>Euismod</dt>
+			<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+			<dd>Donec id elit non mi porta gravida.</dd>
+			<dt>Malesuada porta</dt>
+			<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+					</dl>
+	</div>
+							<div class="tab-pane active" id="second5">
+								<h1><i class="fa fa-fw fa-clock-o text-accent"></i> History</h1>
+								<p class="lead">Ad ius duis dissentiunt, an sit harum primis persecuti, adipisci tacimates mediocrem sit et. Id illud voluptaria omittantur qui, te affert nostro mel. Cu conceptam vituperata temporibus has.</p>
+														<p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
+			
+							</div>
+							<div class="tab-pane" id="third5">						<p>Duo semper accumsan ea, quidam convenire cum cu, oportere maiestatis incorrupte est eu. Soluta audiam timeam ius te, idque gubergren forensibus ad mel, persius urbanitas usu id. Civibus nostrum fabellas mea te, ne pri lucilius iudicabit. Ut cibo semper vituperatoribus vix, cum in error elitr. Vix molestiae intellegat omittantur an, nam cu modo ullum scriptorem.</p>
+			<p>Quod option numquam vel in, et fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Dicant vituperata consequuntur at sea, mazim commodo</p>
+			</div>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Left sidebar layout</em>
+				</div><!--end .col -->
+				<!-- END LAYOUT LEFT SIDEBAR -->
+
+				<!-- BEGIN LAYOUT RIGHT SIDEBAR -->
+				<div class="col-md-6">
+					<div class="card tabs-right style-default-light">
+												<ul class="card-head nav nav-tabs text-center" data-toggle="tabs">
+							<li class="active"><a href="#first6"><i class="fa fa-lg fa-user"></i><br/><h4>Profile<br/><small>Personal details</small></h4></a></li>
+							<li><a href="#second6"><i class="fa fa-lg fa-clock-o"></i><br/><h4>History<br/><small>About us</small></h4></a></li>
+						</ul>
+						<div class="card-body tab-content style-default-bright">
+							<div class="tab-pane active" id="first6">			<h3 class="text-light">Daniel <strong>Johnson</strong></h3>
+								<p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
+			
+		<dl class="dl-horizontal">
+			<dt>Description lists</dt>
+			<dd>A description list is perfect for defining terms.</dd>
+			<dt>Euismod</dt>
+			<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+			<dd>Donec id elit non mi porta gravida.</dd>
+			<dt>Malesuada porta</dt>
+			<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+					</dl>
+	</div>
+							<div class="tab-pane" id="second6">
+								<h1><i class="fa fa-clock-o text-accent"></i> History</h1>
+								<p class="lead">Ad ius duis dissentiunt, an sit harum primis persecuti, adipisci tacimates mediocrem sit et. Id illud voluptaria omittantur qui, te affert nostro mel. Cu conceptam vituperata temporibus has.</p>
+														<p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
+			
+							</div>
+						</div>
+					</div><!--end .card -->
+					<em class="text-caption">Right sidebar layout</em>
+				</div><!--end .col -->
+				<!-- END LAYOUT RIGHT SIDEBAR -->
+
+			</div><!--end .row -->
+			<div class="row">
+
+				<!-- BEGIN LAYOUT FOOTER -->
+				<div class="col-md-6">
+					<div class="card tabs-below">
+												<div class="card-body tab-content">
+							<div class="tab-pane active" id="first7">						<p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
+			</div>
+							<div class="tab-pane" id="second7">						<p>Ad ius duis dissentiunt, an sit harum primis persecuti, adipisci tacimates mediocrem sit et. Id illud voluptaria omittantur qui, te affert nostro mel. Cu conceptam vituperata temporibus has.</p>
+			</div>
+							<div class="tab-pane" id="third7">						<p>Duo semper accumsan ea, quidam convenire cum cu, oportere maiestatis incorrupte est eu. Soluta audiam timeam ius te, idque gubergren forensibus ad mel, persius urbanitas usu id. Civibus nostrum fabellas mea te, ne pri lucilius iudicabit. Ut cibo semper vituperatoribus vix, cum in error elitr. Vix molestiae intellegat omittantur an, nam cu modo ullum scriptorem.</p>
+			<p>Quod option numquam vel in, et fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Dicant vituperata consequuntur at sea, mazim commodo</p>
+			</div>
+						</div>
+						<ul class="card-head nav nav-tabs" data-toggle="tabs">
+							<li class="active"><a href="#first7">FIRST TAB</a></li>
+							<li><a href="#second7">NO. TWO</a></li>
+							<li><a href="#third7">THE THIRD</a></li>
+						</ul>
+					</div><!--end .card -->
+					<em class="text-caption">Footer layout</em>
+				</div><!--end .col -->
+				<!-- END LAYOUT FOOTER -->
+
+				<!-- BEGIN INLINE TABS -->
+				<div class="col-md-6">
+					<div class="card">
+												<div class="card-body">
+							<ul class="nav nav-tabs" data-toggle="tabs">
+								<li class="active"><a href="#first8">FIRST TAB</a></li>
+								<li><a href="#second8">NO. TWO</a></li>
+								<li><a href="#third8">THE THIRD</a></li>
+							</ul>
+							<br/>
+							<div class="tab-content">
+								<div class="tab-pane active" id="first8">						<p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
+			</div>
+								<div class="tab-pane" id="second8">						<p>Ad ius duis dissentiunt, an sit harum primis persecuti, adipisci tacimates mediocrem sit et. Id illud voluptaria omittantur qui, te affert nostro mel. Cu conceptam vituperata temporibus has.</p>
+			</div>
+								<div class="tab-pane" id="third8">						<p>Duo semper accumsan ea, quidam convenire cum cu, oportere maiestatis incorrupte est eu. Soluta audiam timeam ius te, idque gubergren forensibus ad mel, persius urbanitas usu id. Civibus nostrum fabellas mea te, ne pri lucilius iudicabit. Ut cibo semper vituperatoribus vix, cum in error elitr. Vix molestiae intellegat omittantur an, nam cu modo ullum scriptorem.</p>
+			<p>Quod option numquam vel in, et fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Dicant vituperata consequuntur at sea, mazim commodo</p>
+			</div>
+							</div>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Inline tabs</em>
+				</div><!--end .col -->
+				<!-- END INLINE TABS -->
+
+			</div><!--end .row -->
+			
+			<hr class="ruler-xxl">
+
+			<!-- BEGIN COLORS -->
 			<div class="row">
 				<div class="col-lg-12">
-					<h4>Static header</h4>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-12">
+					<h2 class="text-primary">Colors</h2>
+				</div><!--end .col -->
+				<div class="col-lg-8">
 					<article class="margin-bottom-xxl">
 						<p>
-							If you do not want to have a fixed header, you simpe remove the <code>.header-fixed</code> class.
+							Convey meaning through color with the emphasis classes.
 						</p>
 					</article>
 				</div><!--end .col -->
-				<div class="col-lg-offset-1 col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-gray-bright">
-							<div class="row">
-								<div class="col-xs-3"></div>
-								<div class="col-xs-9 ">
-									<div class="border-black border-dashed"><div class="style-default-bright height-1"></div></div>
-									<div class="height-5 style-default-light"></div>
-								</div>
-							</div>
-						</div><!--end .card-body -->
-					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="5">Activate</a>
-						<ul class="text-caption">
-							<li>Expanded menubar</li>
-							<li>Full-height menubar</li>
-							<li><strong>Static header</strong></li>
-						</ul>
-					</div><!--end .holder -->
+			</div><!--end .row -->
+			<div class="row">
+				<div class="col-md-3 col-xs-6">
+					<div class="card">
+						<div class="card-body small-padding style-default-dark text-center">.tabs-default-dark</div>
+					</div>
+					<div class="card">
+						<div class="card-body small-padding style-default text-center">.tabs-default</div>
+					</div>
+					<div class="card">
+						<div class="card-body small-padding style-default-light text-center">.tabs-default-light</div>
+					</div>
+					<div class="card">
+						<div class="card-body small-padding style-default-bright text-center">.tabs-default-bright</div>
+					</div>
 				</div><!--end .col -->
-				<div class="col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-gray-bright">
-							<div class="row">
-								<div class="col-xs-1"></div>
-								<div class="col-xs-11 ">
-									<div class="border-black border-dashed"><div class="style-default-bright height-1"></div></div>
-									<div class="height-5 style-default-light"></div>
-								</div>
-							</div>
-						</div><!--end .card-body -->
-					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="6">Activate</a>
-						<ul class="text-caption">
-							<li>Collapsed menubar</li>
-							<li>Full-height menubar</li>
-							<li><strong>Static header</strong></li>
-						</ul>
-					</div><!--end .holder -->
+				<div class="col-md-3 col-xs-6">
+					<div class="card">
+						<div class="card-body small-padding style-primary-dark text-center">.tabs-primary-dark</div>
+					</div>
+					<div class="card">
+						<div class="card-body small-padding style-primary text-center">.tabs-primary</div>
+					</div>
+					<div class="card">
+						<div class="card-body small-padding style-primary-light text-center">.tabs-primary-light</div>
+					</div>
+					<div class="card">
+						<div class="card-body small-padding style-primary-bright text-center">.tabs-primary-bright</div>
+					</div>
+				</div><!--end .col -->
+				<div class="col-md-3 col-xs-6">
+					<div class="card">
+						<div class="card-body small-padding style-accent-dark text-center">.tabs-accent-dark</div>
+					</div>
+					<div class="card">
+						<div class="card-body small-padding style-accent text-center">.tabs-accent</div>
+					</div>
+					<div class="card">
+						<div class="card-body small-padding style-accent-light text-center">.tabs-accent-light</div>
+					</div>
+					<div class="card">
+						<div class="card-body small-padding style-accent-bright text-center">.tabs-accent-bright</div>
+					</div>
+				</div><!--end .col -->
+				<div class="col-md-3 col-xs-6">
+					<div class="card">
+						<div class="card-body small-padding style-danger text-center">.tabs-danger</div>
+					</div>
+					<div class="card">
+						<div class="card-body small-padding style-warning text-center">.tabs-warning</div>
+					</div>
+					<div class="card">
+						<div class="card-body small-padding style-success text-center">.tabs-success</div>
+					</div>
+					<div class="card">
+						<div class="card-body small-padding style-info text-center">.tabs-info</div>
+					</div>
 				</div><!--end .col -->
 			</div><!--end .row -->
-			<!-- END LAYOUT - STATIC HEADER -->
+			<!-- END COLORS -->
 			
+			<!-- BEGIN COLORS -->
+			<div class="row">
+				<div class="col-lg-5 col-md-6">
+					<article class="margin-bottom-xxl">
+						<p>
+							By default the bar and the text of the tabs have the same color.
+						</p>
+					</article>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END COLORS -->
+
+			<div class="row">
+
+				<!-- BEGIN TAB THEME 1 -->
+				<div class="col-sm-4">
+					<div class="card">
+												<div class="card-head">
+							<ul class="nav nav-tabs tabs-primary" data-toggle="tabs">
+								<li class="active"><a href="#first9">FIRST TAB</a></li>
+								<li><a href="#second9">NO. TWO</a></li>
+							</ul>
+						</div><!--end .card-head -->
+						<div class="card-body tab-content">
+						</div>
+					</div><!--end .card -->
+					<em class="text-caption">Primary variant</em>
+				</div><!--end .col -->
+				<!-- END TAB THEME 1 -->
+
+				<!-- BEGIN TAB THEME 2 -->
+				<div class="col-sm-4">
+					<div class="card">
+												<div class="card-head">
+							<ul class="nav nav-tabs tabs-accent-dark" data-toggle="tabs">
+								<li class="active"><a href="#first10">FIRST TAB</a></li>
+								<li><a href="#second10">NO. TWO</a></li>
+							</ul>
+						</div><!--end .card-head -->
+						<div class="card-body tab-content">
+						</div>
+					</div><!--end .card -->
+					<em class="text-caption">Dark accent variant</em>
+				</div><!--end .col -->
+				<!-- END TAB THEME 2 -->
+
+				<!-- BEGIN TAB THEME 3 -->
+				<div class="col-sm-4">
+					<div class="card">
+												<div class="card-head">
+							<ul class="nav nav-tabs tabs-success" data-toggle="tabs">
+								<li class="active"><a href="#first11">FIRST TAB</a></li>
+								<li><a href="#second11">NO. TWO</a></li>
+							</ul>
+						</div><!--end .card-head -->
+						<div class="card-body tab-content">
+						</div>
+					</div><!--end .card -->
+					<em class="text-caption">Success variant</em>
+				</div><!--end .col -->
+				<!-- END TAB THEME 3 -->
+
+			</div><!--end .row -->
+			
+			<!-- BEGIN COLORS - INVERSE -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h4>Inversed</h4>
+				</div><!--end .col -->
+				<div class="col-lg-5 col-md-6">
+					<article class="margin-bottom-xxl">
+						<p>
+							Tab colors can be inverted so that they are easily visible on dark backgrounds.
+						</p>
+					</article>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END COLORS - INVERSE -->
+			
+			<div class="row">
+
+				<!-- BEGIN TAB THEME 1 -->
+				<div class="col-sm-4">
+					<div class="card style-default-dark">
+												<div class="card-head">
+							<ul class="nav nav-tabs tabs-text-contrast tabs-primary-light" data-toggle="tabs">
+								<li class="active"><a href="#first12">FIRST TAB</a></li>
+								<li><a href="#second12">NO. TWO</a></li>
+							</ul>
+						</div><!--end .card-head -->
+						<div class="card-body tab-content">
+						</div>
+					</div><!--end .card -->
+					<em class="text-caption">Light primary variant</em>
+				</div><!--end .col -->
+				<!-- END TAB THEME 1 -->
+
+				<!-- BEGIN TAB THEME 2 -->
+				<div class="col-sm-4">
+					<div class="card style-default-dark">
+												<div class="card-head">
+							<ul class="nav nav-tabs tabs-text-contrast tabs-accent-light" data-toggle="tabs">
+								<li class="active"><a href="#first13">FIRST TAB</a></li>
+								<li><a href="#second13">NO. TWO</a></li>
+							</ul>
+						</div><!--end .card-head -->
+						<div class="card-body tab-content">
+						</div>
+					</div><!--end .card -->
+					<em class="text-caption">Light accent variant</em>
+				</div><!--end .col -->
+				<!-- END TAB THEME 2 -->
+
+				<!-- BEGIN TAB THEME 3 -->
+				<div class="col-sm-4">
+					<div class="card style-default-dark">
+												<div class="card-head">
+							<ul class="nav nav-tabs tabs-text-contrast tabs-warning" data-toggle="tabs">
+								<li class="active"><a href="#first14">FIRST TAB</a></li>
+								<li><a href="#second14">NO. TWO</a></li>
+							</ul>
+						</div><!--end .card-head -->
+						<div class="card-body tab-content">
+						</div>
+					</div><!--end .card -->
+					<em class="text-caption">Warning variant</em>
+				</div><!--end .col -->
+				<!-- END TAB THEME 3 -->
+
+			</div><!--end .row -->
 		</div><!--end .section-body -->
 	</section>
-
 		</div><!--end #content-->		
 		<!-- END CONTENT -->
 
@@ -450,7 +725,7 @@
 	
 	<!-- BEGIN DASHBOARD -->
 	<li>
-		<a href="/thm-material/layouts/builder.html" class="active">
+		<a href="/thm-material/layouts/builder.html" >
 			<div class="gui-icon"><i class="md md-web"></i></div>
 			<span class="title">Layouts</span>
 		</a>
@@ -475,7 +750,7 @@
 
 			<li><a href="/thm-material/ui/lists.html" ><span class="title">Lists</span></a></li>
 
-			<li><a href="/thm-material/ui/tabs.html" ><span class="title">Tabs</span></a></li>
+			<li><a href="/thm-material/ui/tabs.html" class="active"><span class="title">Tabs</span></a></li>
 
 			<li><a href="/thm-material/ui/accordions.html" ><span class="title">Accordions</span></a></li>
 

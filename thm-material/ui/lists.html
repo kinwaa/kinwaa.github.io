@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Material Admin - Layouts</title>
+<title>Material Admin - Lists</title>
 <!-- BEGIN META -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,30 +15,34 @@
 <link rel="stylesheet" type="text/css" href="/thm-material/css/theme-default/materialadmin.css" />
 <link rel="stylesheet" type="text/css" href="/thm-material/css/theme-default/font-awesome.min.css" />
 <link rel="stylesheet" type="text/css" href="/thm-material/css/theme-default/material-design-iconic-font.min.css" />
+<link rel="stylesheet" type="text/css" href="/thm-material/libs/jquery-ui/jquery-ui-theme.css" />
+<link rel="stylesheet" type="text/css" href="/thm-material/libs/nestable/nestable.css" />
 <!-- END STYLESHEETS -->
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-<script type="text/javascript" src="http://www.codecovers.eu/assets/js/modules/materialadmin/libs/utils/html5shiv.js?1422823601"></script>
-<script type="text/javascript" src="http://www.codecovers.eu/assets/js/modules/materialadmin/libs/utils/respond.min.js?1422823601"></script>
+<script type="text/javascript" src="/thm-material/libs/utils/html5shiv.js"></script>
+<script type="text/javascript" src="/thm-material/libs/utils/respond.min.js"></script>
 <![endif]-->
 
 <!-- BEGIN JAVASCRIPT -->
 <script type="text/javascript" integrity="sha384-Pn+PczAsODRZ2PiGg0IheRROpP7lXO1NTIjiPo6cca8TliBvaeil42fobhzvZd74" crossorigin="anonymous" src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" integrity="sha384-9tt8DlZQhE63eBuKml9tnMclfDeo/8/wstzUrBQStZZkCCvwfw78IiV+r9o600g2" crossorigin="anonymous" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/thm-material/libs/jquery-ui/jquery-ui.min.js"></script>
 <script type="text/javascript" integrity="sha384-4Kp4aQ6UNeqsJ/ithPcxYnnIGt/QJJ64J9QtfDAJZUTaePAIPm9aaBdu7Gw84oGs" crossorigin="anonymous" src="http://cdn.staticfile.org/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/thm-material/libs/spin.js/spin.min.js"></script>
 <script type="text/javascript" integrity="sha384-jSg1dzUV3EsJKaORytph0yWTvX+68V4BAhlKR2pWCswsaPWrc19OgfGGzYcU0nUo" crossorigin="anonymous" src="http://cdn.staticfile.org/autosize.js/1.18.17/jquery.autosize.min.js"></script>
+<script type="text/javascript" src="/thm-material/libs/nestable/jquery.nestable.js"></script>
 <script type="text/javascript" src="/thm-material/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
 <script type="text/javascript" src="/thm-material/core/cache/63d0445130d69b2868a8d28c93309746.js"></script>
 <script type="text/javascript" src="/thm-material/core/demo/demo.js"></script>
-<script type="text/javascript" src="/thm-material/core/demo/demo-layouts.js"></script>
+<script type="text/javascript" src="/thm-material/core/demo/demo-ui-lists.js"></script>
 <!-- END JAVASCRIPT -->
 </head>
 
 <body class="menubar-hoverable header-fixed menubar-pin menubar-first">
 
-<!-- BEGIN HEADER-->
+<!-- BEGIN HEADER -->
 <header id="header">
 					
 
@@ -182,7 +186,8 @@
 		<div class="section-header">
 				<ol class="breadcrumb">
 									<li><a href="/thm-material/dashboards/dashboard.html">home</a></li>
-									<li class="active">Layouts</li>
+									<li>UI elements</li>
+									<li class="active">Lists</li>
 						</ol>
 
 		</div>
@@ -191,17 +196,12 @@
 			<!-- BEGIN INTRO -->
 			<div class="row">
 				<div class="col-lg-12">
-					<h1 class="text-primary">Layouts</h1>
+					<h1 class="text-primary">Lists</h1>
 				</div><!--end .col -->
 				<div class="col-lg-8">
 					<article class="margin-bottom-xxl">
 						<p class="lead">
-							Material Admin has several layout options that can be used for different purposes.
-							You can either choose between a full-width header or a full-height menubar.
-						</p>
-						<p class="lead">
-							Pin the menubar if you want to start with an expanded menubar.
-							When you choose an expanded menubar, it will automatically collapse on smaller screens.
+							Lists present multiple line items in a vertical arrangement as a single continuous element.
 						</p>
 					</article>
 				</div><!--end .col -->
@@ -213,185 +213,778 @@
 				<div class="col-lg-12">
 					<h2 class="text-primary">Content</h2>
 				</div><!--end .col -->
+				<div class="col-lg-12">
+					<h4>Tile content</h4>
+				</div>
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>
+							List tiles present collections of related content in a consistent format, using hierarchy to enhance readability by prioritizing a consistent type or set of content. 
+							This helps users to more easily find the most important information within the collection of content.
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body no-padding">
+							<ul class="list">
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-text">Inbox</div>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-text">Starred</div>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-text">Sent email</div>
+									</a>
+								</li>
+							</ul>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Single line list (click to see the ink effect)</em>
+					<div class="card">
+						<div class="card-body no-padding">
+							<ul class="list divider-full-bleed">
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+											<i class="fa fa-inbox"></i>
+										</div>
+										<div class="tile-text">
+											Inbox
+										</div>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+											<i class="fa fa-send"></i>
+										</div>
+										<div class="tile-text">
+											Outbox
+										</div>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+											<i class="fa fa-trash"></i>
+										</div>
+										<div class="tile-text">
+											Trash
+										</div>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+											<i class="fa fa-warning"></i>
+										</div>
+										<div class="tile-text">
+											Spam
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Single line list with icons</em>
+				</div><!--end .col -->
 			</div><!--end .row -->
 			<!-- END TILE CONTENT -->
 
-			<!-- BEGIN LAYOUT - HEADER FULL WIDTH -->
+			<!-- BEGIN TILE ACTIONS -->
 			<div class="row">
 				<div class="col-lg-12">
-					<h4>Full-width header</h4>
-				</div>
-			</div><!--end .row -->
-			<div class="row">
-				<div class="col-lg-3 col-md-4  col-sm-12">
+					<h4>Tile actions</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
 					<article class="margin-bottom-xxl">
 						<p>
-							In this layout, the header extends over the entire width of the screen.
-							Below the header is the menubar.
+							The majority of space on a list tile should be dedicated to the primary action.
+						</p>
+						<p>
+							Because actions are not distinguishing elements of list tiles, place supplemental actions on the right side of the tile.
 						</p>
 					</article>
 				</div><!--end .col -->
-				<div class="col-lg-offset-1 col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-default-light">
-							<div class="height-1 style-default-bright"></div>
-							<div class="row">
-								<div class="col-xs-3">
-									<div class="height-5 style-gray-bright"></div>
-								</div>
-								<div class="col-xs-9"></div>
-							</div>
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body no-padding">
+							<ul class="list divider-full-bleed">
+								<li class="tile">
+									<a class="tile-content ink-reaction" href="#2">
+										<div class="tile-icon">
+											<img src="/thm-material/images/avatar/02.jpg" alt="" />
+										</div>
+										<div class="tile-text">Abbey Johnson</div>
+									</a>
+									<a class="btn btn-flat ink-reaction">
+										<i class="fa fa-trash"></i>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+											<img src="/thm-material/images/avatar/04.jpg" alt="" />
+										</div>
+										<div class="tile-text">Alex Nelson</div>
+									</a>
+									<a class="btn btn-flat ink-reaction">
+										<i class="fa fa-trash"></i>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+											<img src="/thm-material/images/avatar/11.jpg" alt="" />
+										</div>
+										<div class="tile-text">Mary Peterson</div>
+									</a>
+									<a class="btn btn-flat ink-reaction">
+										<i class="fa fa-trash"></i>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+											<img src="/thm-material/images/avatar/07.jpg" alt="" />
+										</div>
+										<div class="tile-text">Trevor Hanson</div>
+									</a>
+									<a class="btn btn-flat ink-reaction">
+										<i class="fa fa-trash"></i>
+									</a>
+								</li>
+							</ul>
 						</div><!--end .card-body -->
 					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="1">Activate</a>
-						<ul class="text-caption">
-							<li>Expanded menubar</li>
-							<li><strong>Full-width header</strong></li>
-							<li>Fixed header</li>
-						</ul>
-					</div><!--end .holder -->
-				</div><!--end .col -->
-				<div class="col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-default-light">
-							<div class="height-1 style-default-bright"></div>
-							<div class="row">
-								<div class="col-xs-1">
-									<div class="height-5 style-gray-bright"></div>
-								</div>
-								<div class="col-xs-11"></div>
-							</div>
+					<em class="text-caption">Single line list with avatars and action buttons</em>
+					<div class="card">
+						<div class="card-body no-padding">
+							<ul class="list">
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-text">
+											Show your status
+											<small>
+												Your status will be visible to everyone
+											</small>
+										</div>
+									</a>
+									<a class="btn btn-flat ink-reaction">
+										<i class="fa fa-pencil"></i>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-text">
+											Profile photo
+											<small>Change your photo</small>
+										</div>
+									</a>
+									<a class="btn btn-flat ink-reaction">
+										<i class="fa fa-pencil"></i>
+									</a>
+								</li>
+							</ul>
 						</div><!--end .card-body -->
 					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="2">Activate</a>
-						<ul class="text-caption">
-							<li>Collapsed menubar</li>
-							<li><strong>Full-width header</strong></li>
-							<li>Fixed header</li>
-						</ul>
-					</div><!--end .holder -->
+					<em class="text-caption">Two-line list with action buttons</em>
 				</div><!--end .col -->
 			</div><!--end .row -->
-			<!-- END LAYOUT - HEADER FULL WIDTH -->
+			<div class="row">
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>
+							Sometimes the primary action is an action button.
+							You can place them in front.
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body no-padding">
+							<ul class="list">
+								<li class="tile">
+									<a class="btn btn-flat btn-danger ink-reaction">
+										<i class="glyphicon glyphicon-heart"></i>
+									</a>
+									<a class="tile-content ink-reaction" href="#2">
+										<div class="tile-text">
+											Abbey Johnson
+											<small>Last visit: Today</small>
+										</div>
+										<div class="tile-icon">
+											<img src="/thm-material/images/avatar/09.jpg" alt="" />
+										</div>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="btn btn-flat ink-reaction">
+										<i class="glyphicon glyphicon-heart"></i>
+									</a>
+									<a class="tile-content ink-reaction">
+										<div class="tile-text">
+											Alex Nelson
+											<small>Last visit: Yesterday</small>
+										</div>
+										<div class="tile-icon">
+											<img src="/thm-material/images/avatar/04.jpg" alt="" />
+										</div>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="btn btn-flat btn-danger ink-reaction">
+										<i class="glyphicon glyphicon-heart"></i>
+									</a>
+									<a class="tile-content ink-reaction">
+										<div class="tile-text">
 
-			<!-- BEGIN LAYOUT - MENUBAR FULL HEIGHT -->
+											<small>Last visit: Today</small>
+										</div>
+										<div class="tile-icon">
+											<img src="/thm-material/images/avatar/11.jpg" alt="" />
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Two-line list with icons and action buttons</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END TILE ACTIONS -->
+
+			<hr class="ruler-xxl"/>
+
+			<!-- BEGIN INSET DIVIDERS -->
 			<div class="row">
 				<div class="col-lg-12">
-					<h4>Full-height menubar</h4>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-12">
+					<h2 class="text-primary">Dividers</h2>
+				</div><!--end .col -->
+				<div class="col-lg-8">
+					<p class="lead">
+						Dividers group and separate content within lists and page layouts. 
+						The divider is a thin rule, lightweight yet sufficient to distinguish content visually and spatially.
+					</p>
+				</div><!--end .col -->
+				<div class="col-lg-12">
+					<h4>Inset dividers</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
 					<article class="margin-bottom-xxl">
 						<p>
-							In this layout, the menubar extends over the entire height of the screen.
+							Inset dividers subdivide related content, such as phone numbers from email addresses from street addresses in a contact detail.
+						</p>
+						<p>
+							Inset dividers should be used in conjunction with anchoring elements such as icons or avatars aligned with the Title Key Line
 						</p>
 					</article>
 				</div><!--end .col -->
-				<div class="col-lg-offset-1 col-md-4 col-sm-6">
-					<div class="card card-outlined style-accent">
-						<div class="card-body no-padding card-tiles style-default-light">
-							<div class="row">
-								<div class="col-xs-3">
-									<div class="height-6 style-gray-bright"></div>
-								</div>
-								<div class="col-xs-9">
-									<div class="height-1 style-default-bright"></div>
-								</div>
-							</div>
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body no-padding">
+							<ul class="list">
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+											<i class="fa fa-phone"></i>
+										</div>
+										<div class="tile-text">
+											(650) 555-1234
+											<small>Mobile</small>
+										</div>
+									</a>
+									<a class="btn btn-flat btn-primary ink-reaction">
+										<i class="fa fa-comment"></i>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+
+										</div>
+										<div class="tile-text">
+											(323) 555-6789
+											<small>Work</small>
+										</div>
+									</a>
+									<a class="btn btn-flat ink-reaction">
+										<i class="fa fa-comment"></i>
+									</a>
+								</li>
+								<li class="divider-inset"></li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+											<i class="fa fa-envelope"></i>
+										</div>
+										<div class="tile-text">
+											aliconners@example.com
+											<small>Personal</small>
+										</div>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon"></div>
+										<div class="tile-text">
+											ali_conners@example.com
+											<small>Work</small>
+										</div>
+									</a>
+								</li>
+							</ul>
 						</div><!--end .card-body -->
 					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton disabled" data-layout="3">Activated</a>
-						<ul class="text-caption">
-							<li>Expanded menubar</li>
-							<li><strong>Full-height menubar</strong></li>
-							<li>Fixed header</li>
-						</ul>
-					</div><!--end .holder -->
-				</div><!--end .col -->
-				<div class="col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-default-light">
-							<div class="row">
-								<div class="col-xs-1">
-									<div class="height-6 style-gray-bright"></div>
-								</div>
-								<div class="col-xs-11">
-									<div class="height-1 style-default-bright"></div>
-								</div>
-							</div>
-						</div><!--end .card-body -->
-					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="4">Activate</a>
-						<ul class="text-caption">
-							<li>Collapsed menubar</li>
-							<li><strong>Full-height menubar</strong></li>
-							<li>Fixed header</li>
-						</ul>
-					</div><!--end .holder -->
+					<em class="text-caption">Two-line list with half-inset divider</em>
 				</div><!--end .col -->
 			</div><!--end .row -->
-			<!-- END LAYOUT - MENUBAR FULL HEIGHT -->
-			
-			<!-- BEGIN LAYOUT - STATIC HEADER -->
+			<!-- END INSET DIVIDERS -->
+
+			<!-- BEGIN FULL-BLEED DIVIDERS -->
 			<div class="row">
 				<div class="col-lg-12">
-					<h4>Static header</h4>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-12">
+					<h4>Full-bleed dividers</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
 					<article class="margin-bottom-xxl">
 						<p>
-							If you do not want to have a fixed header, you simpe remove the <code>.header-fixed</code> class.
+							Full-bleed dividers separate distinct content sections.
 						</p>
 					</article>
 				</div><!--end .col -->
-				<div class="col-lg-offset-1 col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-gray-bright">
-							<div class="row">
-								<div class="col-xs-3"></div>
-								<div class="col-xs-9 ">
-									<div class="border-black border-dashed"><div class="style-default-bright height-1"></div></div>
-									<div class="height-5 style-default-light"></div>
-								</div>
-							</div>
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body no-padding">
+							<ul class="list divider-full-bleed">
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-text">
+											Abbey Johnson
+											<small>
+												Secondary text lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+											</small>
+										</div>
+										<div class="tile-icon">
+											<img src="/thm-material/images/avatar/09.jpg" alt="" />
+										</div>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-text">
+											Alex Nelson
+											<small>
+												Secondary text lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+											</small>
+										</div>
+										<div class="tile-icon">
+											<img src="/thm-material/images/avatar/12.jpg" alt="" />
+										</div>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-text">
+											Mary Peterson
+											<small>
+												Secondary text lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+											</small>
+										</div>
+										<div class="tile-icon">
+											<img src="/thm-material/images/avatar/14.jpg" alt="" />
+										</div>
+									</a>
+								</li>
+							</ul>
 						</div><!--end .card-body -->
 					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="5">Activate</a>
-						<ul class="text-caption">
-							<li>Expanded menubar</li>
-							<li>Full-height menubar</li>
-							<li><strong>Static header</strong></li>
-						</ul>
-					</div><!--end .holder -->
-				</div><!--end .col -->
-				<div class="col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-gray-bright">
-							<div class="row">
-								<div class="col-xs-1"></div>
-								<div class="col-xs-11 ">
-									<div class="border-black border-dashed"><div class="style-default-bright height-1"></div></div>
-									<div class="height-5 style-default-light"></div>
-								</div>
-							</div>
-						</div><!--end .card-body -->
-					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="6">Activate</a>
-						<ul class="text-caption">
-							<li>Collapsed menubar</li>
-							<li>Full-height menubar</li>
-							<li><strong>Static header</strong></li>
-						</ul>
-					</div><!--end .holder -->
+					<em class="text-caption">Multi-line list with full-bleed dividers</em>
 				</div><!--end .col -->
 			</div><!--end .row -->
-			<!-- END LAYOUT - STATIC HEADER -->
-			
+			<!-- END FULL-BLEED DIVIDERS -->
+
+			<!-- BEGIN MIXED LIST -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h4>Mixing elements</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>
+							You can mix any element together to create a list which suits your needs.
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body no-padding">
+							<ul class="list">
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+											<img src="/thm-material/images/avatar/09.jpg" alt="" />
+										</div>
+										<div class="tile-text">
+											Abbey Johnson
+											<small>
+												Secondary text lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+											</small>
+										</div>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+											<img src="/thm-material/images/avatar/02.jpg" alt="" />
+										</div>
+										<div class="tile-text">
+											Alex Nelson
+											<small>
+												Secondary text lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+											</small>
+										</div>
+									</a>
+								</li>
+								<li class="divider-full-bleed"></li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+											<img src="/thm-material/images/avatar/14.jpg" alt="" />
+										</div>
+										<div class="tile-text">
+											Mary Peterson
+										</div>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+											<img src="/thm-material/images/avatar/08.jpg" alt="" />
+										</div>
+										<div class="tile-text">
+											Alex Heart
+										</div>
+									</a>
+									<a class="btn btn-flat ink-reaction btn-default">
+										<i class="fa fa-edit"></i>
+									</a>
+									<a class="btn btn-flat ink-reaction btn-default">
+										<i class="fa fa-trash"></i>
+									</a>
+								</li>
+								<li class="divider-inset"></li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+											<i class="glyphicon glyphicon-user"></i>
+										</div>
+										<div class="tile-text">
+											Two-line item
+											<small>
+												Secondary text lorem ipsum dolor.
+											</small>
+										</div>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+										</div>
+										<div class="tile-text">
+											Two-line item
+											<small>
+												Secondary text lorem ipsum.
+											</small>
+										</div>
+									</a>
+									<a class="btn btn-flat ink-reaction btn-default">
+										<i class="fa fa-trash"></i>
+									</a>
+								</li>
+							</ul>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">You can mix different elements in 1 list</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END MIXED LIST -->
+
+			<hr class="ruler-xxl"/>
+
+			<!-- BEGIN SORTABLE -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="text-primary">Sortable</h2>
+				</div><!--end .col -->
+				<div class="col-lg-12">
+					<h4>Easy sorting</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>
+							Creating a sortable list is really easy.
+							You only have to add <code>data-sortable="true"</code> to your code and you can start dragging.
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body no-padding">
+							<ul class="list" data-sortable="true">
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+											<img src="/thm-material/images/avatar/02.jpg" alt="" />
+										</div>
+										<div class="tile-text">
+											Material is the metaphor
+										</div>
+										<div class="tile-icon">
+											<i class="fa fa-bars"></i>
+										</div>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+											<img src="/thm-material/images/avatar/04.jpg" alt="" />
+										</div>
+										<div class="tile-text">
+											Bold, graphic, intentional
+										</div>
+										<div class="tile-icon">
+											<i class="fa fa-bars"></i>
+										</div>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+											<img src="/thm-material/images/avatar/06.jpg" alt="" />
+										</div>
+										<div class="tile-text">
+											Motion provides meaning
+										</div>
+										<div class="tile-icon">
+											<i class="fa fa-bars"></i>
+										</div>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+											<img src="/thm-material/images/avatar/07.jpg" alt="" />
+										</div>
+										<div class="tile-text">
+											3D world
+										</div>
+										<div class="tile-icon">
+											<i class="fa fa-bars"></i>
+										</div>
+									</a>
+								</li>
+								<li class="tile">
+									<a class="tile-content ink-reaction">
+										<div class="tile-icon">
+											<img src="/thm-material/images/avatar/09.jpg" alt="" />
+										</div>
+										<div class="tile-text">
+											Light and shadow
+										</div>
+										<div class="tile-icon">
+											<i class="fa fa-bars"></i>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Drag to sort the list</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END SORTABLE -->
+
+			<!-- BEGIN TODO -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h4>Todo Lists</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>
+							Use the sortable list in combination with the styled checkboxes to create the perfect todo list.
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body no-padding">
+							<ul class="list" data-sortable="true">
+								<li class="tile">
+									<div class="checkbox checkbox-styled tile-text">
+										<label>
+											<input type="checkbox" checked>
+											<span>
+												Call clients for follow-up
+											</span>
+										</label>
+									</div>
+									<a class="btn btn-flat ink-reaction btn-default">
+										<i class="fa fa-trash"></i>
+									</a>
+								</li>
+								<li class="tile">
+									<div class="checkbox checkbox-styled tile-text">
+										<label>
+											<input type="checkbox">
+											<span>
+												Schedule meeting
+												<small>
+													opportunity for new customers 
+												</small>
+											</span>
+										</label>
+									</div>
+									<a class="btn btn-flat ink-reaction btn-default">
+										<i class="fa fa-trash"></i>
+									</a>
+								</li>
+								<li class="tile">
+									<div class="checkbox checkbox-styled tile-text">
+										<label>
+											<input type="checkbox">
+											<span>
+												Upload files to server
+												<small>
+													The files must be shared with all members of the board
+												</small>
+											</span>
+										</label>
+									</div>
+									<a class="btn btn-flat ink-reaction btn-default">
+										<i class="fa fa-trash"></i>
+									</a>
+								</li>
+								<li class="tile">
+									<div class="checkbox checkbox-styled tile-text">
+										<label>
+											<input type="checkbox">
+											<span>
+												Forward important tasks
+											</span>
+										</label>
+									</div>
+									<a class="btn btn-flat ink-reaction btn-default">
+										<i class="fa fa-trash"></i>
+									</a>
+								</li>
+							</ul>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Todo list</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END TODO -->
+
+			<!-- BEGIN NESTABLE LISTS -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h4>Nestable Lists</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>
+							The nestable list plugin is also included.
+							You can use the button classes to style it the way you like.
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="dd nestable-list">
+										<ol class="dd-list">
+											<li class="dd-item tile" data-id="1">
+												<div class="dd-handle btn btn-default-light">Item 1</div>
+											</li>
+											<li class="dd-item" data-id="2">
+												<div class="dd-handle btn btn-default-light">Item 2</div>
+											</li>
+											<li class="dd-item" data-id="3">
+												<div class="dd-handle btn btn-default-light">Item 3</div>
+												<ol class="dd-list">
+													<li class="dd-item" data-id="4">
+														<div class="dd-handle btn btn-default-light">Item 4</div>
+													</li>
+													<li class="dd-item" data-id="5">
+														<div class="dd-handle btn btn-default-light">Item 5</div>
+													</li>
+													<li class="dd-item" data-id="6">
+														<div class="dd-handle btn btn-default-light">Item 6</div>
+													</li>
+													<li class="dd-item" data-id="7">
+														<div class="dd-handle btn btn-default-light">Item 7</div>
+													</li>
+												</ol>
+											</li>
+										</ol>
+									</div><!--end .dd.nestable-list -->
+								</div><!--end .col -->
+								<div class="col-lg-6">
+									<div class="dd nestable-list">
+										<ol class="dd-list">
+											<li class="dd-item list-group" data-id="8">
+												<div class="dd-handle btn btn-default-light"></div>
+												<div class="btn btn-default-light">Item 8</div>
+											</li>
+											<li class="dd-item list-group" data-id="9">
+												<div class="dd-handle btn btn-default-light"></div>
+												<div class="btn btn-default-light">Item 9</div>
+											</li>
+											<li class="dd-item list-group" data-id="10">
+												<div class="dd-handle btn btn-default-light"></div>
+												<div class="btn btn-default-light">Item 10</div>
+											</li>
+											<li class="dd-item list-group" data-id="11">
+												<div class="dd-handle btn btn-default-light"></div>
+												<div class="btn btn-default-light">Item 11</div>
+
+												<ol class="dd-list">
+													<li class="dd-item list-group" data-id="12">
+														<div class="dd-handle btn btn-default-light"></div>
+														<div class="btn btn-default-light">Item 12</div>
+													</li>
+													<li class="dd-item list-group" data-id="13">
+														<div class="dd-handle btn btn-default-light"></div>
+														<div class="btn btn-default-light">Item 13</div>
+													</li>
+													<li class="dd-item list-group" data-id="14">
+														<div class="dd-handle btn btn-default-light"></div>
+														<div class="btn btn-default-light">Item 14</div>
+													</li>
+												</ol>
+											</li>
+										</ol>
+									</div><!--end .dd.nestable-list -->
+								</div><!--end .col -->
+							</div><!--end .row -->
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Nestable Lists</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END NESTABLE LISTS -->
+
 		</div><!--end .section-body -->
 	</section>
 
@@ -450,7 +1043,7 @@
 	
 	<!-- BEGIN DASHBOARD -->
 	<li>
-		<a href="/thm-material/layouts/builder.html" class="active">
+		<a href="/thm-material/layouts/builder.html" >
 			<div class="gui-icon"><i class="md md-web"></i></div>
 			<span class="title">Layouts</span>
 		</a>
@@ -473,7 +1066,7 @@
 
 			<li><a href="/thm-material/ui/buttons.html" ><span class="title">Buttons</span></a></li>
 
-			<li><a href="/thm-material/ui/lists.html" ><span class="title">Lists</span></a></li>
+			<li><a href="/thm-material/ui/lists.html" class="active"><span class="title">Lists</span></a></li>
 
 			<li><a href="/thm-material/ui/tabs.html" ><span class="title">Tabs</span></a></li>
 

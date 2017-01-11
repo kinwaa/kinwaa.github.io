@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Material Admin - Layouts</title>
+<title>Material Admin - Typography</title>
 <!-- BEGIN META -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,8 +19,8 @@
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-<script type="text/javascript" src="http://www.codecovers.eu/assets/js/modules/materialadmin/libs/utils/html5shiv.js?1422823601"></script>
-<script type="text/javascript" src="http://www.codecovers.eu/assets/js/modules/materialadmin/libs/utils/respond.min.js?1422823601"></script>
+<script type="text/javascript" src="/thm-material/libs/utils/html5shiv.js"></script>
+<script type="text/javascript" src="/thm-material/libs/utils/respond.min.js"></script>
 <![endif]-->
 
 <!-- BEGIN JAVASCRIPT -->
@@ -32,13 +32,12 @@
 <script type="text/javascript" src="/thm-material/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
 <script type="text/javascript" src="/thm-material/core/cache/63d0445130d69b2868a8d28c93309746.js"></script>
 <script type="text/javascript" src="/thm-material/core/demo/demo.js"></script>
-<script type="text/javascript" src="/thm-material/core/demo/demo-layouts.js"></script>
 <!-- END JAVASCRIPT -->
 </head>
 
 <body class="menubar-hoverable header-fixed menubar-pin menubar-first">
 
-<!-- BEGIN HEADER-->
+<!-- BEGIN HEADER -->
 <header id="header">
 					
 
@@ -176,13 +175,12 @@
 
 		<!-- BEGIN CONTENT-->
 		<div id="content">
-			
-	<!-- BEGIN LIST SAMPLES -->
-	<section>
+				<section>
 		<div class="section-header">
 				<ol class="breadcrumb">
 									<li><a href="/thm-material/dashboards/dashboard.html">home</a></li>
-									<li class="active">Layouts</li>
+									<li>UI elements</li>
+									<li class="active">Typography</li>
 						</ol>
 
 		</div>
@@ -191,210 +189,653 @@
 			<!-- BEGIN INTRO -->
 			<div class="row">
 				<div class="col-lg-12">
-					<h1 class="text-primary">Layouts</h1>
+					<h1 class="text-primary">Typography</h1>
 				</div><!--end .col -->
 				<div class="col-lg-8">
 					<article class="margin-bottom-xxl">
 						<p class="lead">
-							Material Admin has several layout options that can be used for different purposes.
-							You can either choose between a full-width header or a full-height menubar.
+							Material Admin uses Roboto as the standard typeface.
+							Roboto has been refined extensively to work across the wider set of supported platforms. 
+							It is slightly wider and rounder, giving it greater clarity and making it more optimistic.
 						</p>
 						<p class="lead">
-							Pin the menubar if you want to start with an expanded menubar.
-							When you choose an expanded menubar, it will automatically collapse on smaller screens.
+							Roboto supports the languages that use the Latin, Greek, and Cyrillic scripts.
 						</p>
 					</article>
 				</div><!--end .col -->
 			</div><!--end .row -->
 			<!-- END INTRO -->
 
-			<!-- BEGIN TILE CONTENT -->
+			<!-- BEGIN SECTION INTRO -->
 			<div class="row">
 				<div class="col-lg-12">
-					<h2 class="text-primary">Content</h2>
-				</div><!--end .col -->
+					<h2 class="text-primary">Font styles</h2>
+				</div>
 			</div><!--end .row -->
-			<!-- END TILE CONTENT -->
+			<!-- END SECTION INTRO -->
 
-			<!-- BEGIN LAYOUT - HEADER FULL WIDTH -->
+			<!-- BEGIN STYLES - HEADINGS -->
 			<div class="row">
 				<div class="col-lg-12">
-					<h4>Full-width header</h4>
-				</div>
-			</div><!--end .row -->
-			<div class="row">
-				<div class="col-lg-3 col-md-4  col-sm-12">
+					<h4>Typographic scale & basic styles</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
 					<article class="margin-bottom-xxl">
 						<p>
-							In this layout, the header extends over the entire width of the screen.
-							Below the header is the menubar.
+							Too many type sizes and styles at once can wreck any layout. 
+							A typographic scale has a limited set of type sizes that work well together along with the layout grid. 
+							The basic set of styles are based on a typographic scale of 12, 13, 15, 20, 24 and 34.
 						</p>
 					</article>
 				</div><!--end .col -->
-				<div class="col-lg-offset-1 col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-default-light">
-							<div class="height-1 style-default-bright"></div>
-							<div class="row">
-								<div class="col-xs-3">
-									<div class="height-5 style-gray-bright"></div>
-								</div>
-								<div class="col-xs-9"></div>
-							</div>
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<h1><small class="pull-left width-1">h1</small> Normal 34px</h1>
+							<h2><small class="pull-left width-1">h2</small> Normal 24px</h2>
+							<h3><small class="pull-left width-1">h3</small> Medium 20px</h3>
+							<h4><small class="pull-left width-1">h4</small> Medium 15px</h4>
+							<h5><small class="pull-left width-1">h5</small> Medium 13px</h5>
+							<h6><small class="pull-left width-1">h6</small> Medium 12px</h6>
 						</div><!--end .card-body -->
 					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="1">Activate</a>
-						<ul class="text-caption">
-							<li>Expanded menubar</li>
-							<li><strong>Full-width header</strong></li>
-							<li>Fixed header</li>
-						</ul>
-					</div><!--end .holder -->
-				</div><!--end .col -->
-				<div class="col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-default-light">
-							<div class="height-1 style-default-bright"></div>
-							<div class="row">
-								<div class="col-xs-1">
-									<div class="height-5 style-gray-bright"></div>
-								</div>
-								<div class="col-xs-11"></div>
-							</div>
-						</div><!--end .card-body -->
-					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="2">Activate</a>
-						<ul class="text-caption">
-							<li>Collapsed menubar</li>
-							<li><strong>Full-width header</strong></li>
-							<li>Fixed header</li>
-						</ul>
-					</div><!--end .holder -->
+					<em class="text-caption">Basic headings</em>
 				</div><!--end .col -->
 			</div><!--end .row -->
-			<!-- END LAYOUT - HEADER FULL WIDTH -->
+			<!-- END STYLES - HEADINGS -->
 
-			<!-- BEGIN LAYOUT - MENUBAR FULL HEIGHT -->
+			<!-- BEGIN STYLES - SCALE -->
 			<div class="row">
 				<div class="col-lg-12">
-					<h4>Full-height menubar</h4>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-12">
+					<h4>Scale</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
 					<article class="margin-bottom-xxl">
 						<p>
-							In this layout, the menubar extends over the entire height of the screen.
+							Sometimes you need to scale up or down the text.
+							There are 7 classes you can use for this purpose.
 						</p>
 					</article>
 				</div><!--end .col -->
-				<div class="col-lg-offset-1 col-md-4 col-sm-6">
-					<div class="card card-outlined style-accent">
-						<div class="card-body no-padding card-tiles style-default-light">
-							<div class="row">
-								<div class="col-xs-3">
-									<div class="height-6 style-gray-bright"></div>
-								</div>
-								<div class="col-xs-9">
-									<div class="height-1 style-default-bright"></div>
-								</div>
-							</div>
-						</div><!--end .card-body -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<p class="text-xxxxl">Text xxxx-large</p>
+							<p class="text-xxxl">Text xxx-large</p>
+							<p class="text-xxl">Text xx-large</p>
+							<p class="text-xl">Text x-large</p>
+							<p class="text-lg">Text large</p>
+							<p>Text regular</p>
+							<p class="text-sm">Text small</p>
+							<p class="text-xs">Text x-small</p>
+						</div>
 					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton disabled" data-layout="3">Activated</a>
-						<ul class="text-caption">
-							<li>Expanded menubar</li>
-							<li><strong>Full-height menubar</strong></li>
-							<li>Fixed header</li>
-						</ul>
-					</div><!--end .holder -->
-				</div><!--end .col -->
-				<div class="col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-default-light">
-							<div class="row">
-								<div class="col-xs-1">
-									<div class="height-6 style-gray-bright"></div>
-								</div>
-								<div class="col-xs-11">
-									<div class="height-1 style-default-bright"></div>
-								</div>
-							</div>
-						</div><!--end .card-body -->
-					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="4">Activate</a>
-						<ul class="text-caption">
-							<li>Collapsed menubar</li>
-							<li><strong>Full-height menubar</strong></li>
-							<li>Fixed header</li>
-						</ul>
-					</div><!--end .holder -->
+					<em class="text-caption">Font style classes</em>
 				</div><!--end .col -->
 			</div><!--end .row -->
-			<!-- END LAYOUT - MENUBAR FULL HEIGHT -->
-			
-			<!-- BEGIN LAYOUT - STATIC HEADER -->
+			<!-- END STYLES - SCALE -->
+
+
+			<!-- BEGIN STYLES - WEIGHT -->
 			<div class="row">
 				<div class="col-lg-12">
-					<h4>Static header</h4>
-				</div>
-				<div class="col-lg-3 col-md-4 col-sm-12">
+					<h4>Weight</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
 					<article class="margin-bottom-xxl">
 						<p>
-							If you do not want to have a fixed header, you simpe remove the <code>.header-fixed</code> class.
+							The weight styles are available through classes so you can use it easily.
 						</p>
 					</article>
 				</div><!--end .col -->
-				<div class="col-lg-offset-1 col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-gray-bright">
-							<div class="row">
-								<div class="col-xs-3"></div>
-								<div class="col-xs-9 ">
-									<div class="border-black border-dashed"><div class="style-default-bright height-1"></div></div>
-									<div class="height-5 style-default-light"></div>
-								</div>
-							</div>
-						</div><!--end .card-body -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<h3 class="text-light">Light text</h3>
+							<h3 class="text-normal">Normal text</h3>
+							<h3 class="text-medium">Medium text</h3>
+							<h3 class="text-bold">Bold text</h3>
+							<h3 class="text-ultra-bold">Ultra bold text</h3>
+						</div>
 					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="5">Activate</a>
-						<ul class="text-caption">
-							<li>Expanded menubar</li>
-							<li>Full-height menubar</li>
-							<li><strong>Static header</strong></li>
-						</ul>
-					</div><!--end .holder -->
-				</div><!--end .col -->
-				<div class="col-md-4 col-sm-6">
-					<div class="card card-outlined style-default-bright">
-						<div class="card-body no-padding card-tiles style-gray-bright">
-							<div class="row">
-								<div class="col-xs-1"></div>
-								<div class="col-xs-11 ">
-									<div class="border-black border-dashed"><div class="style-default-bright height-1"></div></div>
-									<div class="height-5 style-default-light"></div>
-								</div>
-							</div>
-						</div><!--end .card-body -->
-					</div><!--end .card -->
-					<div class="text-caption holder">
-						<a href="javascript:void(0);" class="btn btn-flat btn-accent ink-reaction stick-top-right layoutButton" data-layout="6">Activate</a>
-						<ul class="text-caption">
-							<li>Collapsed menubar</li>
-							<li>Full-height menubar</li>
-							<li><strong>Static header</strong></li>
-						</ul>
-					</div><!--end .holder -->
+					<em class="text-caption">Font weight classes</em>
 				</div><!--end .col -->
 			</div><!--end .row -->
-			<!-- END LAYOUT - STATIC HEADER -->
+			<!-- END STYLES - WEIGHT -->
+
+			<!-- BEGIN STYLES - COMBINATIONS -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h4>Combinations</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>
+							When you combine the different font classes with the heading classes, you can get the following Material Design styles.
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<table class="table table-condensed table-no-border">
+								<tr>
+									<td class="text-default-light">h1<br/>.text-xxxl<br/>.text-light</td>
+									<td><h1><span class="text-xxxl text-light">Display 4</span></h1></td>
+								</tr>
+								<tr>
+									<td class="text-default-light">h2<br/>.text-xxl</td>
+									<td><h2><span class="text-xxl">Display 3</span></h2></td>
+								</tr>
+								<tr>
+									<td class="text-default-light">h3<br/>.text-xxl<br/>.text-normal</td>
+									<td><h3><span class="text-xxl text-normal">Display 2</span></h3></td>
+								</tr>
+								<tr>
+									<td class="text-default-light">h1</td>
+									<td><h1>Display 1</h1></td>
+								</tr>
+								<tr>
+									<td class="text-default-light">h2</td>
+									<td><h2>Headline</h2></td>
+								</tr>
+								<tr>
+									<td class="text-default-light">h3</td>
+									<td><h3>Title</h3></td>
+								</tr>
+								<tr>
+									<td class="text-default-light">h4</td>
+									<td><h4>Subhead</h4></td>
+								</tr>
+								<tr>
+									<td class="text-default-light">Default</td>
+									<td>Body</td>
+								</tr>
+								<tr>
+									<td class="text-default-light">.text-caption</td>
+									<td><span class="text-caption no-margin">Caption</span></td>
+								</tr>
+							</table>
+						</div>
+					</div><!--end .card -->
+					<em class="text-caption">Combining classes</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END STYLES -->
+
+			<hr class="ruler-xxl"/>
+
+			<!-- BEGIN PARAGRAPH -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="text-primary">Body copy</h2>
+				</div><!--end .col -->
+				<div class="col-lg-12">
+					<h4>Paragraphs</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>
+							The default font-size is 13px, with a line-height of 24px. 
+							This is applied to the <code>&lt;body&gt;</code> and all paragraphs.
+						</p>
+						<p>
+							In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their computed line-height (12px by default).
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor <strong>strong</strong>.</p>
+							<p>
+								Maecenas sed diam eget risus varius blandit sit amet non magna. <em>Donec id elit non mi porta gravida at eget metus.</em> Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.<br/>
+								<small>This line of text is meant to be treated as fine print.</small>
+							</p>
+						</div>
+					</div><!--end .card -->
+					<em class="text-caption">Paragraphs</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END PARAGRAPH -->
+
+			<!-- BEGIN LEAD PARAGRAPH -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h4>Lead paragraph</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>
+							Make a paragraph stand out by adding <code>.lead</code>.
+							It will increase font-size, line-height and the bottom margin.
+							The font receives a thin weight weight.
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<p class="lead">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor.</p>
+						</div>
+					</div><!--end .card -->
+					<em class="text-caption">Paragraph with leading text</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END LEAD PARAGRAPH -->
+
+			<!-- BEGIN LEAD BLOCKQUOTES -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h4>Blockquote</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>
+							For quoting blocks of content from another source within your document.
+							Add a <code>&lt;footer&gt;</code> for identifying the source.
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<blockquote>
+								<p>Any man who reads too much and uses his own brain too little falls into lazy habits of thinking.</p>
+								<footer>Albert Einstein</footer>
+							</blockquote>
+							<blockquote class="blockquote-reverse">
+								<p>Don't wait around for other people to be happy for you. Any happiness you get you've got to make yourself.</p>
+								<footer>Alice Walker</footer>
+							</blockquote>
+						</div>
+					</div><!--end .card -->
+					<em class="text-caption">Blockquote</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END LEAD BLOCKQUOTES -->
+
+			<hr class="ruler-xxl"/>
+
+			<!-- BEGIN COLORS -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="text-primary">Colors</h2>
+				</div><!--end .col -->
+				<div class="col-lg-3">
+					<article class="margin-bottom-xxl">
+						<p>
+							Convey meaning through color with the emphasis classes.
+							These may also be applied to links and will darken on hover.
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-lg-2 col-md-3 col-xs-6">
+					<div class="card">
+						<div class="card-body style-default-dark height-1"></div>
+						<div class="card-body small-padding text-center">
+							<span class="text-default-dark">.text-default-dark</span>
+						</div>
+					</div><!--end .card -->
+					<div class="card">
+						<div class="card-body style-gray-dark height-1"></div>
+						<div class="card-body small-padding text-center">
+							<span class="text-default">.text-default</span>
+						</div>
+					</div><!--end .card -->
+					<div class="card">
+						<div class="card-body style-gray-light height-1"></div>
+						<div class="card-body small-padding text-center">
+							<span class="text-default-light">.text-default-light</span>
+						</div>
+					</div><!--end .card -->
+					<div class="card">
+						<div class="card-body style-default-bright height-1"></div>
+						<div class="card-body style-gray-light small-padding text-center">
+							<span class="text-default-bright">.text-default-bright</span>
+						</div>
+					</div><!--end .card -->
+				</div><!--end .col -->
+				<div class="col-lg-2 col-md-3 col-xs-6">
+					<div class="card">
+						<div class="card-body style-primary-dark height-1"></div>
+						<div class="card-body small-padding text-center">
+							<span class="text-primary-dark">.text-primary-dark</span>
+						</div>
+					</div><!--end .card -->
+					<div class="card">
+						<div class="card-body style-primary height-1"></div>
+						<div class="card-body small-padding text-center">
+							<span class="text-primary">.text-primary</span>
+						</div>
+					</div><!--end .card -->
+					<div class="card">
+						<div class="card-body style-primary-light height-1"></div>
+						<div class="card-body small-padding text-center">
+							<span class="text-primary-light">.text-primary-light</span>
+						</div>
+					</div><!--end .card -->
+					<div class="card">
+						<div class="card-body style-primary-bright height-1"></div>
+						<div class="card-body small-padding text-center">
+							<span class="text-primary-bright">.text-primary-bright</span>
+						</div>
+					</div><!--end .card -->
+				</div><!--end .col -->
+				<div class="col-lg-2 col-md-3 col-xs-6">
+					<div class="card">
+						<div class="card-body style-accent-dark height-1"></div>
+						<div class="card-body small-padding text-center">
+							<span class="text-accent-dark">.text-accent-dark</span>
+						</div>
+					</div><!--end .card -->
+					<div class="card">
+						<div class="card-body style-accent height-1"></div>
+						<div class="card-body small-padding text-center">
+							<span class="text-accent">.text-accent</span>
+						</div>
+					</div><!--end .card -->
+					<div class="card">
+						<div class="card-body style-accent-light height-1"></div>
+						<div class="card-body small-padding text-center">
+							<span class="text-accent-light">.text-accent-light</span>
+						</div>
+					</div><!--end .card -->
+					<div class="card">
+						<div class="card-body style-accent-bright height-1"></div>
+						<div class="card-body small-padding text-center">
+							<span class="text-accent-bright">.text-accent-bright</span>
+						</div>
+					</div><!--end .card -->
+				</div><!--end .col -->
+				<div class="col-lg-2 col-md-3 col-xs-6">
+					<div class="card">
+						<div class="card-body style-danger height-1"></div>
+						<div class="card-body small-padding text-center">
+							<span class="text-danger">.text-danger</span>
+						</div>
+					</div><!--end .card -->
+					<div class="card">
+						<div class="card-body style-warning height-1"></div>
+						<div class="card-body small-padding text-center">
+							<span class="text-warning">.text-warning</span>
+						</div>
+					</div><!--end .card -->
+					<div class="card">
+						<div class="card-body style-success height-1"></div>
+						<div class="card-body small-padding text-center">
+							<span class="text-success">.text-success</span>
+						</div>
+					</div><!--end .card -->
+					<div class="card">
+						<div class="card-body style-info height-1"></div>
+						<div class="card-body small-padding text-center">
+							<span class="text-info">.text-info</span>
+						</div>
+					</div><!--end .card -->
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END COLORS -->
+
+			<hr class="ruler-xxl"/>
+
+			<!-- BEGIN LIST -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="text-primary">Lists</h2>
+				</div><!--end .col -->
+				<div class="col-lg-12">
+					<h4>Typographic scale & basic styles</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3">
+					<article class="margin-bottom-xxl">
+						<p>
+							The weight styles are available through classes so you can use it easily.
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-lg-4 col-sm-6">
+					<div class="card">
+						<div class="card-body">
+							<ul> 
+								<li>Lorem ipsum dolor sit amet</li>
+								<li>Facilisis in pretium nisl aliquet</li>
+								<li>Integer molestie lorem at massa</li>
+								<li>Facilisis in pretium nisl aliquet</li>
+								<li>Nulla volutpat aliquam velit 
+									<ul> 
+										<li>Phasellus iaculis neque</li>
+										<li>Purus sodales ultricies</li> 
+										<li>Ac tristique libero volutpat</li> 
+									</ul> 
+								</li>
+								<li>Aenean sit amet erat nunc</li>
+								<li>Eget porttitor lorem</li>
+							</ul>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Unordered list</em>
+				</div><!--end .col -->
+				<div class="col-lg-4 col-sm-6">
+					<div class="card">
+						<div class="card-body">
+							<ol> 
+								<li>Lorem ipsum dolor sit amet</li> 
+								<li>Consectetur adipiscing elit</li>
+								<li>Integer molestie lorem at massa</li>
+								<li>Facilisis in pretium nisl aliquet</li>
+								<li>Nulla volutpat aliquam velit</li>
+								<li>Faucibus porta lacus fringilla vel</li> 
+								<li>Aenean sit amet erat nunc</li> 
+								<li>Eget porttitor lorem</li>
+								<li>Integer molestie lorem at massa</li>
+								<li>Facilisis in pretium nisl aliquet</li>
+							</ol>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Ordered list</em>
+				</div><!--end .col -->
+				<div class="col-lg-offset-4 col-lg-4 col-sm-6">
+					<div class="card">
+						<div class="card-body">
+							<ul class="list-unstyled">
+								<li>Lorem ipsum dolor sit amet</li>
+								<li>Consectetur adipiscing elit</li>
+								<li>Integer molestie lorem at massa</li>
+								<li>Nulla volutpat aliquam velit
+									<ul>
+										<li>Phasellus iaculis neque</li>
+										<li>Ac tristique libero volutpat at</li>
+									</ul>
+								</li>
+								<li>Faucibus porta lacus fringilla vel</li>
+								<li>Aenean sit amet erat nunc</li>
+							</ul>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Unstyled list</em>
+				</div><!--end .col -->
+				<div class="col-lg-4 col-sm-6">
+					<div class="card">
+						<div class="card-body">
+							<ul class="list-divided">
+								<li>Lorem ipsum dolor sit amet</li>
+								<li>Consectetur adipiscing elit</li>
+								<li>Integer molestie lorem at massa</li>
+								<li>Faucibus porta lacus fringilla vel</li>
+								<li>Aenean sit amet erat nunc</li>
+							</ul>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Divided list</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END LIST -->
+
+			<!-- BEGIN DESCRIPTION LISTS -->
+			<div class="row">
+				<div class="col-lg-offset-4 col-lg-8">
+					<div class="card">
+						<div class="card-body">
+							<dl>
+								<dt>Description lists</dt>
+								<dd>A description list is perfect for defining terms.</dd>
+								<dt>Euismod</dt>
+								<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+								<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+								<dt>Malesuada porta</dt>
+								<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+							</dl>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Regular description</em>
+				</div><!--end .col -->
+				<div class="col-lg-offset-4 col-lg-8">
+					<div class="card">
+						<div class="card-body">
+							<dl class="dl-horizontal">
+								<dt>Description lists</dt>
+								<dd>A description list is perfect for defining terms.</dd>
+								<dt>Euismod</dt>
+								<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+								<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+								<dt>Malesuada porta</dt>
+								<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+								<dt>Felis euismod semper eget lacinia</dt>
+								<dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+							</dl>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Horizontal description</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END DESCRIPTION LISTS -->
+
+			<hr class="ruler-xxl"/>
+					
+			<!-- BEGIN COLUMNS INTRO -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="text-primary">Responsive text columns</h2>
+				</div><!--end .col -->
+				<div class="col-lg-8">
+					<article class="margin-bottom-xxl">
+						<p>
+							If a line of text is too long, the user’s eye will have a hard time focusing on the text. 
+							This is because the length makes it difficult to get an idea of where the line starts and ends. Furthermore it can be difficult to continue from the correct line in large blocks of text.
+						</p>
+						<p>
+							To regulate the length of a line of text, you can use the text columns classes.
+							As the screen becomes smaller, there will be fewer columns.
+							Therefore, the text remains readable.
+						</p>
+					</article>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END COLUMNS INTRO -->
+
+			<!-- BEGIN SMALL COLUMNS -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h4>Small text columns</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						The class <code>.text-columns-sm</code> will divide the text in the following columns:
+						<ul>
+							<li>4 columns on large screens</li>
+							<li>3 columns on medium screens</li>
+							<li>2 columns on small screens</li>
+							<li>1 column on extra small screens</li>
+						</ul>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<div class="text-columns-sm">
+														<p>Duo semper accumsan ea, quidam convenire cum cu, oportere maiestatis incorrupte est eu. Soluta audiam timeam ius te, idque gubergren forensibus ad mel, persius urbanitas usu id. Civibus nostrum fabellas mea te, ne pri lucilius iudicabit. Ut cibo semper vituperatoribus vix, cum in error elitr. Vix molestiae intellegat omittantur an, nam cu modo ullum scriptorem.</p>
+			<p>Quod option numquam vel in, et fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Dicant vituperata consequuntur at sea, mazim commodo</p>
 			
+														<p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
+			
+							</div>
+						</div>
+					</div><!--end .card -->
+					<em class="text-caption">Small text columns</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END SMALL COLUMNS -->
+			
+			<!-- BEGIN REGULAR COLUMNS -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h4>Regular text columns</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						The class <code>.text-columns</code> will divide the text in the following columns:
+						<ul>
+							<li>3 columns on large screens</li>
+							<li>2 columns on medium screens</li>
+							<li>1 column on small screens</li>
+							<li>1 column on extra small screens</li>
+						</ul>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<div class="text-columns">
+														<p>Duo semper accumsan ea, quidam convenire cum cu, oportere maiestatis incorrupte est eu. Soluta audiam timeam ius te, idque gubergren forensibus ad mel, persius urbanitas usu id. Civibus nostrum fabellas mea te, ne pri lucilius iudicabit. Ut cibo semper vituperatoribus vix, cum in error elitr. Vix molestiae intellegat omittantur an, nam cu modo ullum scriptorem.</p>
+			<p>Quod option numquam vel in, et fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Dicant vituperata consequuntur at sea, mazim commodo</p>
+			
+														<p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
+			
+							</div>
+						</div>
+					</div><!--end .card -->
+					<em class="text-caption">Regular text columns</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END REGULAR COLUMNS -->
+			
+			<!-- BEGIN LARGE COLUMNS -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h4>Large text columns</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						The class <code>.text-columns-lg</code> will divide the text in the following columns:
+						<ul>
+							<li>2 columns on large screens</li>
+							<li>1 column on medium screens</li>
+							<li>1 column on small screens</li>
+							<li>1 column on extra small screens</li>
+						</ul>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<div class="text-columns-lg">
+														<p>Duo semper accumsan ea, quidam convenire cum cu, oportere maiestatis incorrupte est eu. Soluta audiam timeam ius te, idque gubergren forensibus ad mel, persius urbanitas usu id. Civibus nostrum fabellas mea te, ne pri lucilius iudicabit. Ut cibo semper vituperatoribus vix, cum in error elitr. Vix molestiae intellegat omittantur an, nam cu modo ullum scriptorem.</p>
+			<p>Quod option numquam vel in, et fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Dicant vituperata consequuntur at sea, mazim commodo</p>
+			
+														<p>Per at postea mediocritatem, vim numquam aliquid eu, in nam sale gubergren. Fuisset delicatissimi duo, qui ut animal noluisse erroribus. Ea eum veniam audire. Dicant vituperata consequuntur.</p>
+			
+							</div>
+						</div>
+					</div><!--end .card -->
+					<em class="text-caption">Large text columns</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END LARGE COLUMNS -->
+
 		</div><!--end .section-body -->
 	</section>
-
 		</div><!--end #content-->		
 		<!-- END CONTENT -->
 
@@ -450,7 +891,7 @@
 	
 	<!-- BEGIN DASHBOARD -->
 	<li>
-		<a href="/thm-material/layouts/builder.html" class="active">
+		<a href="/thm-material/layouts/builder.html" >
 			<div class="gui-icon"><i class="md md-web"></i></div>
 			<span class="title">Layouts</span>
 		</a>
@@ -467,7 +908,7 @@
 		<ul>
 			<li><a href="/thm-material/ui/colors.html" ><span class="title">Colors</span></a></li>
 
-			<li><a href="/thm-material/ui/typography.html" ><span class="title">Typography</span></a></li>
+			<li><a href="/thm-material/ui/typography.html" class="active"><span class="title">Typography</span></a></li>
 
 			<li><a href="/thm-material/ui/cards.html" ><span class="title">Cards</span></a></li>
 
