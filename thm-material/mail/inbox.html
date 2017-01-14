@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Material Admin - Form validation</title>
+<title>Material Admin - Inbox</title>
 <!-- BEGIN META -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,14 +30,12 @@
 <script type="text/javascript" src="/thm-material/libs/spin.js/spin.min.js"></script>
 <script type="text/javascript" integrity="sha384-jSg1dzUV3EsJKaORytph0yWTvX+68V4BAhlKR2pWCswsaPWrc19OgfGGzYcU0nUo" crossorigin="anonymous" src="http://cdn.staticfile.org/autosize.js/1.18.17/jquery.autosize.min.js"></script>
 <script type="text/javascript" src="/thm-material/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
-<script type="text/javascript" src="/thm-material/libs/jquery-validation/dist/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/thm-material/libs/jquery-validation/dist/additional-methods.min.js"></script>
 <script type="text/javascript" src="/thm-material/core/cache/63d0445130d69b2868a8d28c93309746.js"></script>
 <script type="text/javascript" src="/thm-material/core/demo/demo.js"></script>
 <!-- END JAVASCRIPT -->
 </head>
 
-<body class="menubar-hoverable header-fixed menubar-pin menubar-first">
+<body class="menubar-hoverable header-fixed menubar-pin menubar-first full-content">
 
 <!-- BEGIN HEADER -->
 <header id="header">
@@ -96,8 +94,8 @@
 						</a>
 					</li>
 					<li class="dropdown-header">Options</li>
-					<li><a href="/thm-material/pages/login.html">View all messages <span class="pull-right"><i class="fa fa-arrow-right"></i></span></a></li>
-					<li><a href="/thm-material/pages/login.html">Mark as read <span class="pull-right"><i class="fa fa-arrow-right"></i></span></a></li>
+					<li><a href="http://www.codecovers.eu/materialadmin/pages/login">View all messages <span class="pull-right"><i class="fa fa-arrow-right"></i></span></a></li>
+					<li><a href="http://www.codecovers.eu/materialadmin/pages/login">Mark as read <span class="pull-right"><i class="fa fa-arrow-right"></i></span></a></li>
 				</ul><!--end .dropdown-menu -->
 			</li><!--end .dropdown -->
 			<li class="dropdown hidden-xs">
@@ -147,12 +145,12 @@
 				</a>
 				<ul class="dropdown-menu animation-dock">
 					<li class="dropdown-header">Config</li>
-					<li><a href="/thm-material/pages/profile.html">My profile</a></li>
+					<li><a href="http://www.codecovers.eu/materialadmin/pages/profile">My profile</a></li>
 					<li><a href="http://www.codecovers.eu/materialadmin/pages/blog/post"><span class="badge style-danger pull-right">16</span>My blog</a></li>
 					<li><a href="http://www.codecovers.eu/materialadmin/pages/calendar">My appointments</a></li>
 					<li class="divider"></li>
 					<li><a href="http://www.codecovers.eu/materialadmin/pages/locked"><i class="fa fa-fw fa-lock"></i> Lock</a></li>
-					<li><a href="/thm-material/pages/login.html"><i class="fa fa-fw fa-power-off text-danger"></i> Logout</a></li>
+					<li><a href="http://www.codecovers.eu/materialadmin/pages/login"><i class="fa fa-fw fa-power-off text-danger"></i> Logout</a></li>
 				</ul><!--end .dropdown-menu -->
 			</li><!--end .dropdown -->
 		</ul><!--end .header-nav-profile -->
@@ -177,163 +175,142 @@
 
 		<!-- BEGIN CONTENT-->
 		<div id="content">
-				<section>
-		<div class="section-header">
-				<ol class="breadcrumb">
-									<li><a href="/thm-material/dashboards/dashboard.html">home</a></li>
-									<li>Forms</li>
-									<li class="active">Form validation</li>
-						</ol>
-
-		</div>
-		<div class="section-body contain-lg">
-
-			<!-- BEGIN BASIC VALIDATION -->
-			<div class="row">
-				<div class="col-lg-12">
-					<h1 class="text-primary">Basic validation</h1>
-				</div><!--end .col -->
-				<div class="col-lg-3 col-md-4">
-					<article class="margin-bottom-xxl">
-						<p class="lead">
-							Form validation ensures that the data is entered correctly. 
-							This saves time for both the sender and the receiver.
-						</p>
-						<p>
-							Validation can be added directly into your HTML.
-							This way you don't have to dive into your javascript everytime you need to add some rules.
-							Clientside validation can be activated when you add <code>.form-validate</code> to your form.
-						</p>
-					</article>
-				</div><!--end .col -->
-				<div class="col-lg-offset-1 col-md-8">
-										<form class="form form-validate floating-label" novalidate="novalidate">
-						<div class="card">
-							<div class="card-body">
-								<div class="form-group">
-									<input type="text" class="form-control" id="Name1" name="Name1" required data-rule-minlength="2">
-									<label for="Name1">Name</label>
-								</div>
-								<div class="form-group">
-									<input type="email" class="form-control" id="Email1" name="Email1" required>
-									<label for="Email1">Email</label>
-								</div>
-								<div class="form-group">
-									<input type="password" class="form-control" id="Password1" name="Password1" required data-rule-minlength="5">
-									<label for="Password1">Password</label>
-								</div>
-								<div class="form-group">
-									<select id="select1" name="select1" class="form-control" required>
-										<option value="">&nbsp;</option>
-										<option value="30">30</option>
-										<option value="40">40</option>
-										<option value="50">50</option>
-										<option value="60">60</option>
-										<option value="70">70</option>
-									</select>
-									<label for="select1">Select</label>
-								</div>
-								<div class="form-group">
-									<textarea name="textarea1" id="textarea1" class="form-control" rows="3" required></textarea>
-									<label for="textarea1">Textarea</label>
-								</div>
-								<div class="form-group">
-									<div class="checkbox checkbox-styled">
-										<label>
-											<input type="checkbox" name="terms1" required>
-											<span>I have read and accept the term.</span>
-										</label>
-									</div>
-								</div>
-							</div><!--end .card-body -->
-							<div class="card-actionbar">
-								<div class="card-actionbar-row">
-									<button type="submit" class="btn btn-flat btn-primary ink-reaction">Validate</button>
-								</div>
-							</div><!--end .card-actionbar -->
-						</div><!--end .card -->
-						<em class="text-caption">Basic validation</em>
-					</form>
-				</div><!--end .col -->
-			</div><!--end .row -->
-			<!-- END BASIC VALIDATION -->
 			
-			<!-- BEGIN ADVANCED VALIDATION -->
+	<section class="has-actions style-default-bright">
+
+		<!-- BEGIN INBOX -->
+		<div class="section-body">
 			<div class="row">
-				<div class="col-lg-12">
-					<h4>Advanced validation</h4>
-				</div><!--end .col -->
-				<div class="col-lg-3 col-md-4">
-					<article class="margin-bottom-xxl">
-						<p>
-							Also advanced validation rules can be added directly into your HTML.
-						</p>
-					</article>
-				</div><!--end .col -->
-				<div class="col-lg-offset-1 col-md-8">
-										<form class="form form-validate floating-label" novalidate="novalidate">
-						<div class="card">
-							<div class="card-body">
-								<div class="form-group">
-									<input type="text" class="form-control" id="minmax2" name="minmax2" data-rule-minlength="2" maxlength="5" required>
-									<label for="minmax2">Min / Max length</label>
-									<p class="help-block">Minimum length 2 / Maximum length 5</p>
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" id="rangelength2" name="rangelength2" data-rule-rangelength="[5, 10]" required>
-									<label for="rangelength2">Range restriction</label>
-									<p class="help-block">Between 5 and 10</p>
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" id="minmaxvalue2" name="minmaxvalue2" data-rule-min="18" data-rule-max="65" required>
-									<label for="minmaxvalue2">Min / Max value</label>
-									<p class="help-block">Minimum value 18 / Maximum value 65</p>
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" id="rangevalue2" name="rangevalue2" data-rule-range="[18, 65]" required>
-									<label for="rangevalue2">Range value</label>
-									<p class="help-block">Between 18 and 65</p>
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" id="url2" name="url2" data-rule-url="true" required>
-									<label for="url2">URL</label>
-									<p class="help-block">Starts with http://</p>
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" id="date2" name="date2" data-rule-date="true" required>
-									<label for="date2">Date</label>
-									<p class="help-block">YYYY-MM-DD</p>
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" id="number2" name="number2" data-rule-number="true" required>
-									<label for="number2">Number</label>
-									<p class="help-block">Numbers only</p>
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" id="digits2" name="digits2" data-rule-digits="true" required>
-									<label for="digits2">Digits</label>
-									<p class="help-block">Digits only</p>
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" id="creditcard2" name="creditcard2" data-rule-creditcard="true" required>
-									<label for="creditcard2">Creditcard</label>
-									<p class="help-block">try 446-667-651</p>
-								</div>
-							</div><!--end .card-body -->
-							<div class="card-actionbar">
-								<div class="card-actionbar-row">
-									<button type="submit" class="btn btn-flat btn-primary ink-reaction">Validate</button>
-								</div>
-							</div>
-						</div><!--end .card -->
-						<em class="text-caption">Advanced validation</em>
+
+				<!-- BEGIN INBOX NAV -->
+				<div class="col-sm-4 col-md-3 col-lg-2">
+					<form class="navbar-search margin-bottom-xxl" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control" name="contactSearch" placeholder="Enter your keyword">
+						</div>
+						<button type="submit" class="btn btn-icon-toggle ink-reaction"><i class="fa fa-search"></i></button>
 					</form>
+					<ul class="nav nav-pills nav-stacked nav-icon">
+						<li><small>MAILBOXES</small></li>
+						<li class="active"><a href="/thm-material/mail/inbox.html"><span class="glyphicon glyphicon-inbox"></span>Inbox <small>(45)</small></a></li>
+						<li><a href="/thm-material/mail/inbox.html" class="text-default-light">Starred</a></li>
+						<li><a href="/thm-material/mail/inbox.html" class="text-default-light">Important</a></li>
+						<li><a href="/thm-material/mail/inbox.html">Sent</a></li>
+						<li><a href="/thm-material/mail/inbox.html" class="text-default-light">Draft</a></li>
+						<li><a href="/thm-material/mail/inbox.html"><span class="glyphicon glyphicon-trash"></span>Trash</a></li>
+						<li><a href="/thm-material/mail/inbox.html"><span class="glyphicon glyphicon-paperclip"></span>Attachments</a></li>
+						<li><small>Tags</small></li>
+						<li><a href="#"><i class="fa fa-dot-circle-o text-info"></i>Unread</a></li>
+						<li><a href="#"><i class="fa fa-dot-circle-o text-danger"></i>Important</a></li>
+						<li><a href="#"><i class="fa fa-dot-circle-o text-success"></i>Success</a></li>
+					</ul>
+				</div><!--end . -->
+				<!-- END INBOX NAV -->
+
+				<div class="col-sm-8 col-md-9 col-lg-10">
+					<div class="text-divider visible-xs"><span>Email list</span></div>
+					<div class="row">
+
+						<!-- BEGIN INBOX EMAIL LIST -->
+						<div class="col-md-5 col-lg-4 height-6 scroll-sm">
+							<div class="list-group list-email list-gray">
+								<a href="/thm-material/mail/inbox.html" class="list-group-item">
+									<h5>Jonathan Smith</h5>
+									<h4>I am on my way</h4>
+									<p class="hidden-xs hidden-sm">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit...</p>
+									<div class="stick-top-right small-padding text-default-light text-sm">12:46 am</div>
+									<div class="stick-bottom-right small-padding"><span class="glyphicon glyphicon-paperclip"></span></div>
+								</a>
+								<a href="/thm-material/mail/inbox.html" class="list-group-item focus">
+									<div class="stick-top-left small-padding"><i class="fa fa-dot-circle-o text-info"></i></div>
+									<h5>Alicia Spinnet</h5>
+									<h4>Reaching the top</h4>
+									<div class="stick-top-right small-padding text-default-light text-sm">08:12 am</div>
+									<p class="hidden-xs hidden-sm">We are already halfway there. There are still some obstacles that we must take, but I do not expect any problems...</p>
+								</a>
+								<a href="/thm-material/mail/inbox.html" class="list-group-item">
+									<h5>Peter Pitt</h5>
+									<h4>Seeing the top</h4>
+									<div class="stick-top-right small-padding text-default-light text-sm">Yesterday</div>
+									<p class="hidden-xs hidden-sm">Please check the new headlines of the magazine. They are quite insignificant compared with...</p>
+								</a>
+								<a href="/thm-material/mail/inbox.html" class="list-group-item">
+									<div class="stick-top-left small-padding"><i class="fa fa-dot-circle-o text-info"></i></div>
+									<h5>Alicia Spinnet</h5>
+									<h4>Meeting next monday</h4>
+									<div class="stick-top-right small-padding text-default-light text-sm">Jul 12</div>
+									<p class="hidden-xs hidden-sm">Proin nonummy, lacus eget pulvinar lacinia, pede felis dignissim leo, vitae tristique magna lacus...</p>
+									<div class="stick-bottom-right small-padding"><span class="glyphicon glyphicon-paperclip"></span></div>
+								</a>
+								<a href="/thm-material/mail/inbox.html" class="list-group-item">
+									<h5>Dennis Riker</h5>
+									<h4>I'm on my way</h4>
+									<div class="stick-top-right small-padding text-default-light text-sm">Jul 07</div>
+								</a>
+								<a href="/thm-material/mail/inbox.html" class="list-group-item">
+									<h5>John West</h5>
+									<h4>The great escape</h4>
+									<div class="stick-top-right small-padding text-default-light text-sm">Jun 24</div>
+									<p class="hidden-xs hidden-sm">Proin nonummy, lacus eget pulvinar lacinia, pede felis dignissim leo, vitae tristique magna lacus...</p>
+								</a>
+								<a href="/thm-material/mail/inbox.html" class="list-group-item">
+									<div class="stick-top-left small-padding"><i class="fa fa-dot-circle-o text-info"></i></div>
+									<h5>George Williams</h5>
+									<h4>I'm at the gym at 9 pm</h4>
+									<div class="stick-top-right small-padding text-default-light text-sm">Jun 22</div>
+								</a>
+							</div><!--end .list-group -->
+						</div><!--end .col -->
+						<!-- END INBOX EMAIL LIST -->
+
+						<!-- BEGIN EMAIL CONTENT -->
+						<div class="col-md-7 col-lg-8">
+							<div class="text-divider hidden-md hidden-lg"><span>Email</span></div>
+							<h1 class="no-margin">Reaching the top</h1>
+							<div class="btn-group stick-top-right">
+								<a href="/thm-material/mail/reply.html" class="btn btn-icon-toggle btn-default"><i class="md md-delete"></i></a>
+								<a href="/thm-material/mail/reply.html" class="btn btn-icon-toggle btn-default"><i class="md md-reply"></i></a>
+								<a href="/thm-material/mail/reply.html" class="btn btn-icon-toggle btn-default"><i class="md md-reply-all"></i></a>
+								<a href="/thm-material/mail/reply.html" class="btn btn-icon-toggle btn-default"><i class="md md-forward"></i></a>
+							</div>
+							<span class="pull-right text-default-light">Today, 08:12 am</span>
+							<strong>Alicia Spinnet</strong>
+							<hr/>
+							<p class="lead">We are already halfway there. There are still some obstacles that we must take, but I do not expect any problems. Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							<p><img class="img-responsive" src="/thm-material/images/img14.jpg" alt="" /></p>
+							<p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
+							<p>Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat ipsum urna sed risus. In convallis tellus a mauris. Curabitur non elit ut libero tristique sodales. Mauris a lacus. Donec mattis semper leo. In hac habitasse platea dictumst. Vivamus facilisis diam at odio. Mauris dictum, nisi eget consequat elementum, lacus ligula molestie metus, non feugiat orci magna ac sem. Donec turpis. Donec vitae metus. Morbi tristique neque eu mauris. Quisque gravida ipsum non sapien. Proin turpis lacus, scelerisque vitae, elementum at, lobortis ac, quam. Aliquam dictum eleifend risus. In hac habitasse platea dictumst. Etiam sit amet diam. Suspendisse odio. Suspendisse nunc. In semper bibendum libero.</p>
+							<p>Proin nonummy, lacus eget pulvinar lacinia, pede felis dignissim leo, vitae tristique magna lacus sit amet eros. Nullam ornare. Praesent odio ligula, dapibus sed, tincidunt eget, dictum ac, nibh. Nam quis lacus. Nunc eleifend molestie velit. Morbi lobortis quam eu velit. Donec euismod vestibulum massa. Donec non lectus. Aliquam commodo lacus sit amet nulla. Cras dignissim elit et augue. Nullam non diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Aenean vestibulum. Sed lobortis elit quis lectus. Nunc sed lacus at augue bibendum dapibus.</p>
+							<p>Aliquam vehicula sem ut pede. Cras purus lectus, egestas eu, vehicula at, imperdiet sed, nibh. Morbi consectetuer luctus felis. Donec vitae nisi. Aliquam tincidunt feugiat elit. Duis sed elit ut turpis ullamcorper feugiat. Praesent pretium, mauris sed fermentum hendrerit, nulla lorem iaculis magna, pulvinar scelerisque urna tellus a justo. Suspendisse pulvinar massa in metus. Duis quis quam. Proin justo. Curabitur ac sapien. Nam erat. Praesent ut quam.</p>
+						</div><!--end .col -->
+						<!-- END EMAIL CONTENT -->
+
+					</div><!--end .row -->
 				</div><!--end .col -->
 			</div><!--end .row -->
-			<!-- END ADVANCED VALIDATION -->
-
 		</div><!--end .section-body -->
+		<!-- END INBOX -->
+
+		<!-- BEGIN SECTION ACTION -->
+		<div class="section-action style-primary">
+			<div class="section-action-row">
+				<a class="btn ink-reaction btn-icon-toggle" data-toggle="tooltip" data-placement="top" data-original-title="Delete mail">
+					<span class="glyphicon glyphicon-trash"></span>
+				</a>
+				<a class="btn ink-reaction btn-icon-toggle" href="/thm-material/mail/reply.html" data-toggle="tooltip" data-placement="top" data-original-title="Reply to this mail">
+					<i class="fa fa-reply"></i>
+				</a>
+			</div>
+			<div class="section-floating-action-row">
+				<a class="btn ink-reaction btn-floating-action btn-lg btn-accent" href="/thm-material/mail/compose.html" data-toggle="tooltip" data-placement="top" data-original-title="Compose">
+					<i class="md md-add"></i>
+				</a>
+			</div>
+		</div><!--end .section-action -->
+		<!-- END SECTION ACTION -->
+
 	</section>
+
 		</div><!--end #content-->		
 		<!-- END CONTENT -->
 
@@ -375,7 +352,7 @@
 		</a>
 		<!--start submenu -->
 		<ul>
-			<li><a href="/thm-material/mail/inbox.html" ><span class="title">Inbox</span></a></li>
+			<li><a href="/thm-material/mail/inbox.html" class="active"><span class="title">Inbox</span></a></li>
 
 			<li><a href="/thm-material/mail/compose.html" ><span class="title">Compose</span></a></li>
 
@@ -404,25 +381,25 @@
 		</a>
 		<!--start submenu -->
 		<ul>
-			<li><a href="/thm-material/ui/colors.html" ><span class="title">Colors</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/ui/colors" ><span class="title">Colors</span></a></li>
 
-			<li><a href="/thm-material/ui/typography.html" ><span class="title">Typography</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/ui/typography" ><span class="title">Typography</span></a></li>
 
-			<li><a href="/thm-material/ui/cards.html" ><span class="title">Cards</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/ui/cards" ><span class="title">Cards</span></a></li>
 
-			<li><a href="/thm-material/ui/buttons.html" ><span class="title">Buttons</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/ui/buttons" ><span class="title">Buttons</span></a></li>
 
-			<li><a href="/thm-material/ui/lists.html" ><span class="title">Lists</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/ui/lists" ><span class="title">Lists</span></a></li>
 
-			<li><a href="/thm-material/ui/tabs.html" ><span class="title">Tabs</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/ui/tabs" ><span class="title">Tabs</span></a></li>
 
-			<li><a href="/thm-material/ui/accordions.html" ><span class="title">Accordions</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/ui/accordions" ><span class="title">Accordions</span></a></li>
 
-			<li><a href="/thm-material/ui/messages.html" ><span class="title">Messages</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/ui/messages" ><span class="title">Messages</span></a></li>
 
-			<li><a href="/thm-material/ui/offcanvas.html" ><span class="title">Off-canvas</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/ui/offcanvas" ><span class="title">Off-canvas</span></a></li>
 
-			<li><a href="/thm-material/ui/grid.html" ><span class="title">Grid</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/ui/grid" ><span class="title">Grid</span></a></li>
 
 			<li class="gui-folder">
 				<a href="javascript:void(0);">
@@ -430,13 +407,13 @@
 				</a>
 				<!--start submenu -->
 				<ul>
-					<li><a href="/thm-material/ui/icons/materialicons.html" ><span class="title">Material Design Icons</span></a></li>
+					<li><a href="http://www.codecovers.eu/materialadmin/ui/icons/materialicons" ><span class="title">Material Design Icons</span></a></li>
 
-					<li><a href="/thm-material/ui/icons/fontawesome.html" ><span class="title">Font Awesome</span></a></li>
+					<li><a href="http://www.codecovers.eu/materialadmin/ui/icons/fontawesome" ><span class="title">Font Awesome</span></a></li>
 
-					<li><a href="/thm-material/ui/icons/glyphicons.html" ><span class="title">Glyphicons</span></a></li>
+					<li><a href="http://www.codecovers.eu/materialadmin/ui/icons/glyphicons" ><span class="title">Glyphicons</span></a></li>
 
-					<li><a href="/thm-material/ui/icons/skycons.html" ><span class="title">Skycons</span></a></li>
+					<li><a href="http://www.codecovers.eu/materialadmin/ui/icons/skycons" ><span class="title">Skycons</span></a></li>
 
 				</ul><!--end /submenu -->
 			</li><!--end /menu-li -->
@@ -452,11 +429,11 @@
 		</a>
 		<!--start submenu -->
 		<ul>
-			<li><a href="/thm-material/tables/static.html" ><span class="title">Static Tables</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/tables/static" ><span class="title">Static Tables</span></a></li>
 
-			<li><a href="/thm-material/tables/dynamic.html" ><span class="title">Dynamic Tables</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/tables/dynamic" ><span class="title">Dynamic Tables</span></a></li>
 
-			<li><a href="/thm-material/tables/responsive.html" ><span class="title">Responsive Table</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/tables/responsive" ><span class="title">Responsive Table</span></a></li>
 
 		</ul><!--end /submenu -->
 	</li><!--end /menu-li -->
@@ -470,17 +447,17 @@
 		</a>
 		<!--start submenu -->
 		<ul>
-			<li><a href="/thm-material/forms/basic.html" ><span class="title">Form basic</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/forms/basic" ><span class="title">Form basic</span></a></li>
 
-			<li><a href="/thm-material/forms/advanced.html" ><span class="title">Form advanced</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/forms/advanced" ><span class="title">Form advanced</span></a></li>
 
-			<li><a href="/thm-material/forms/layouts.html" ><span class="title">Form layouts</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/forms/layouts" ><span class="title">Form layouts</span></a></li>
 
-			<li><a href="/thm-material/forms/editors.html" ><span class="title">Editors</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/forms/editors" ><span class="title">Editors</span></a></li>
 
-			<li><a href="/thm-material/forms/validation.html" class="active"><span class="title">Form validation</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/forms/validation" ><span class="title">Form validation</span></a></li>
 
-			<li><a href="/thm-material/forms/wizard.html" ><span class="title">Form wizard</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/forms/wizard" ><span class="title">Form wizard</span></a></li>
 
 					</ul><!--end /submenu -->
 	</li><!--end /menu-li -->
@@ -546,7 +523,7 @@
 
 				</ul><!--end /submenu -->
 			</li><!--end /menu-li -->
-			<li><a href="/thm-material/pages/profile.html" ><span class="title">User profile<span class="badge style-accent">42</span></span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/pages/profile" ><span class="title">User profile<span class="badge style-accent">42</span></span></a></li>
 
 			<li><a href="http://www.codecovers.eu/materialadmin/pages/invoice" ><span class="title">Invoice</span></a></li>
 
@@ -560,9 +537,9 @@
 
 			<li><a href="http://www.codecovers.eu/materialadmin/pages/locked" ><span class="title">Lock screen</span></a></li>
 
-			<li><a href="/thm-material/pages/login.html" ><span class="title">Login</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/pages/login" ><span class="title">Login</span></a></li>
 
-			<li><a href="/thm-material/pages/blank.html" ><span class="title">Blank page</span></a></li>
+			<li><a href="http://www.codecovers.eu/materialadmin/pages/blank" ><span class="title">Blank page</span></a></li>
 
 		</ul><!--end /submenu -->
 	</li><!--end /menu-li -->
