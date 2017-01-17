@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Material Admin - Profile</title>
+<title>Material Admin - Charts</title>
 <!-- BEGIN META -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,8 @@
 <link rel="stylesheet" type="text/css" href="/thm-material/css/theme-default/materialadmin.css" />
 <link rel="stylesheet" type="text/css" href="/thm-material/css/theme-default/font-awesome.min.css" />
 <link rel="stylesheet" type="text/css" href="/thm-material/css/theme-default/material-design-iconic-font.min.css" />
-<link rel="stylesheet" type="text/css" href="/thm-material/css/theme-default/materialadmin_print.css"  media="print" />
+<link rel="stylesheet" type="text/css" href="/thm-material/libs/morris/morris.core.css" />
+<link rel="stylesheet" type="text/css" href="/thm-material/libs/rickshaw/rickshaw.css" />
 <!-- END STYLESHEETS -->
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -30,9 +31,18 @@
 <script type="text/javascript" integrity="sha384-4Kp4aQ6UNeqsJ/ithPcxYnnIGt/QJJ64J9QtfDAJZUTaePAIPm9aaBdu7Gw84oGs" crossorigin="anonymous" src="http://cdn.staticfile.org/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/thm-material/libs/spin.js/spin.min.js"></script>
 <script type="text/javascript" integrity="sha384-jSg1dzUV3EsJKaORytph0yWTvX+68V4BAhlKR2pWCswsaPWrc19OgfGGzYcU0nUo" crossorigin="anonymous" src="http://cdn.staticfile.org/autosize.js/1.18.17/jquery.autosize.min.js"></script>
+<script type="text/javascript" integrity="sha384-Xtz2F6lyH327Ss8Oo7ji6fYdvuZEC51BeIcxotR5gMncyQSiybXw4IefID59fGvq" crossorigin="anonymous" src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+<script type="text/javascript" src="/thm-material/core/cache/ec2c8835c9f9fbb7b8cd36464b491e73.js"></script>
+<script type="text/javascript" src="/thm-material/libs/jquery-knob/jquery.knob.min.js"></script>
+<script type="text/javascript" src="/thm-material/libs/sparkline/jquery.sparkline.min.js"></script>
 <script type="text/javascript" src="/thm-material/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
+<script type="text/javascript" src="/thm-material/libs/raphael/raphael-min.js"></script>
+<script type="text/javascript" src="/thm-material/libs/morris/morris.min.js"></script>
+<script type="text/javascript" src="/thm-material/core/cache/43ef607ee92d94826432d1d6f09372e1.js"></script>
+<script type="text/javascript" src="/thm-material/libs/rickshaw/rickshaw.min.js"></script>
 <script type="text/javascript" src="/thm-material/core/cache/63d0445130d69b2868a8d28c93309746.js"></script>
 <script type="text/javascript" src="/thm-material/core/demo/demo.js"></script>
+<script type="text/javascript" src="/thm-material/core/demo/demo-charts.js"></script>
 <!-- END JAVASCRIPT -->
 </head>
 
@@ -180,144 +190,303 @@
 		<div class="section-header">
 				<ol class="breadcrumb">
 									<li><a href="/thm-material/dashboards/dashboard.html">home</a></li>
-									<li>Pages</li>
-									<li class="active">Invoice</li>
+									<li class="active">Charts</li>
 						</ol>
 
 		</div>
-		<div class="section-body">
+		<div class="section-body contain-lg">
+
+			<!-- BEGIN FLOT -->
 			<div class="row">
 				<div class="col-lg-12">
-					<div class="card card-printable style-default-light">
-						<div class="card-head">
-							<div class="tools">
-								<div class="btn-group">
-									<a class="btn btn-floating-action btn-primary" href="javascript:void(0);" onclick="javascript:window.print();"><i class="md md-print"></i></a>
-								</div>
-							</div>
-						</div><!--end .card-head -->
-						<div class="card-body style-default-bright">
-
-							<!-- BEGIN INVOICE HEADER -->
-							<div class="row">
-								<div class="col-xs-8">
-									<h1 class="text-light"><i class="fa fa-microphone fa-fw fa-2x text-accent-dark"> </i>Clear <strong class="text-accent-dark">Speakers</strong></h1>
-								</div>
-								<div class="col-xs-4 text-right">
-									<h1 class="text-light text-default-light">Invoice</h1>
-								</div>
-							</div><!--end .row -->
-							<!-- END INVOICE HEADER -->
-
-							<br/>
-
-							<!-- BEGIN INVOICE DESCRIPTION -->
-							<div class="row">
-								<div class="col-xs-4">
-									<h4 class="text-light">Prepared by</h4>
-									<address>
-										<strong>Clear Speakers, Inc.</strong><br>
-										54 Clear Ave<br>
-										San Francisco, CA 87654<br>
-										<abbr title="Phone">P:</abbr> (987) 654-3210
-									</address>
-								</div><!--end .col -->
-								<div class="col-xs-4">
-									<h4 class="text-light">Prepared for</h4>
-									<address>
-										<strong>Daniel Johnson, Inc.</strong><br>
-										621 Johnson Ave, Suite 600<br>
-										San Francisco, CA 54321<br>
-										<abbr title="Phone">P:</abbr> (123) 456-7890
-									</address>
-								</div><!--end .col -->
-								<div class="col-xs-4">
-									<div class="well">
-										<div class="clearfix">
-											<div class="pull-left"> INVOICE NO : </div>
-											<div class="pull-right"> 98653624 </div>
-										</div>
-										<div class="clearfix">
-											<div class="pull-left"> INVOICE DATE : </div>
-											<div class="pull-right"> 10/02/14 </div>
-										</div>
-									</div>
-								</div><!--end .col -->
-							</div><!--end .row -->
-							<!-- END INVOICE DESCRIPTION -->
-
-							<br/>
-
-							<!-- BEGIN INVOICE PRODUCTS -->
-							<div class="row">
-								<div class="col-md-12">
-									<table class="table">
-										<thead>
-											<tr>
-												<th style="width:60px" class="text-center">QTY</th>
-												<th class="text-left">DESCRIPTION</th>
-												<th style="width:140px" class="text-right">UNIT PRICE</th>
-												<th style="width:90px" class="text-right">TOTAL</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td class="text-center">2</td>
-												<td>Nostrud exercitation 76 ullamco</td>
-												<td class="text-right">$385.00</td>
-												<td class="text-right">$770.00</td>
-											</tr>
-											<tr>
-												<td class="text-center">1</td>
-												<td>Elit 9.0 sed do eiusmod</td>
-												<td class="text-right">$215.00</td>
-												<td class="text-right">$215.00</td>
-											</tr>
-											<tr>
-												<td class="text-center">4</td>
-												<td>commodo consequat & Duis aute- irure dolor</td>
-												<td class="text-right">$405.25</td>
-												<td class="text-right">$1,621.00</td>
-											</tr>
-											<tr>
-												<td colspan="2" rowspan="4">
-													<h3 class="text-light opacity-50">Invoice notes</h3>
-													<p><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</small></p>
-													<p><strong><em>Excepteur sint occaecat est laborum.</em></strong></p>
-												</td>
-												<td class="text-right"><strong>Subtotal</strong></td>
-												<td class="text-right">$2,606.00</td>
-											</tr>
-											<tr>
-												<td class="text-right hidden-border"><strong>Shipping fee</strong></td>
-												<td class="text-right hidden-border">$0.00</td>
-											</tr>
-											<tr>
-												<td class="text-right hidden-border"><strong>VAT</strong></td>
-												<td class="text-right hidden-border">$0.00</td>
-											</tr>
-											<tr>
-												<td class="text-right"><strong class="text-lg text-accent">Total</strong></td>
-												<td class="text-right"><strong class="text-lg text-accent">$2,606.00</strong></td>
-											</tr>
-										</tbody>
-									</table>
-								</div><!--end .col -->
-							</div><!--end .row -->
-							<!-- END INVOICE PRODUCTS -->
-
+					<h2 class="text-primary">Flot charts</h2>
+				</div><!--end .col -->
+				<div class="col-lg-12">
+					<h4>Examples</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>
+							Attractive JavaScript plotting for jQuery. 
+							Flot is a pure JavaScript plotting library for jQuery, with a focus on simple usage, attractive looks and interactive features.
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<div id="visitor-chart" class="flot height-6" data-title="Site visits" data-color="#9C27B0,#0aa89e"></div>
 						</div><!--end .card-body -->
 					</div><!--end .card -->
+					<em class="text-caption">Interactive linechart</em>
+					<div class="card">
+						<div class="card-body">
+							<div id="realtime-chart" class="flot height-6" data-title="Site visits" data-color="#2196F3"></div>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Realtime chart</em>
 				</div><!--end .col -->
 			</div><!--end .row -->
+			<!-- END FLOT -->
+
+			<hr class="ruler-xxl"/>
+
+			<!-- BEGIN RICKSHAW -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="text-primary">Rickshaw charts</h2>
+				</div><!--end .col -->
+				<div class="col-lg-12">
+					<h4>Examples</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>
+							Rickshaw is a JavaScript toolkit for creating interactive time series graphs.
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<div id="rickshawGraph" class="height-4" data-color1="#0aa89e" data-color2="rgba(79, 89, 89, 0.2)"></div>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption"> Interactive Real-Time Data (Dig into continuously updating data)</em>
+					<div class="card">
+						<div class="card-body">
+							<div class="column">
+								<div id="rickshawDemo2"></div>
+								<div id="slider"></div>
+							</div>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption"> Multiple Renderers (Bars, lines, area, and scatterplot graphs all in one setting)</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END RICKSHAW -->
+
+			<hr class="ruler-xxl"/>
+
+			<!-- BEGIN KNOB -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="text-primary">Knob charts</h2>
+				</div><!--end .col -->
+				<div class="col-lg-12">
+					<h4>Examples</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>
+							Knob charts are a downward compatible, touchable, jQuery dial.
+							Material Admin has added serveral classes for easy styling with theme colors.
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-4 col-sm-6">
+					<div class="card">
+						<div class="card-body text-center">
+							<div class="knob knob-primary knob-default-dark-track size-4"><input type="text" class="dial" data-min="0" data-max="100" data-thickness=.1 value="40" data-readOnly=true></div>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Thin knob chart</em>
+					<div class="card">
+						<div class="card-body text-center">
+							<div class="knob knob-accent knob-default-track size-4"><input type="text" class="dial" data-min="0" data-max="100" data-thickness=.1 value="40" data-readOnly=true></div>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Thin knob chart with alternative colors</em>
+				</div><!--end .col -->
+				<div class="col-md-4 col-sm-6">
+					<div class="card">
+						<div class="card-body text-center">
+							<div class="knob knob-accent knob-default-track size-4"><input type="text" class="dial" data-min="0" data-max="365" data-cursor=true value="90"></div>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Interactive knob chart</em>
+					<div class="card">
+						<div class="card-body text-center">
+							<div class="knob knob-primary knob-default-light-track size-4"><input type="text" class="dial" value="56" data-angleOffset=-125 data-angleArc=250 data-readOnly=true></div>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Gauge style knob chart</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END KNOB -->
+
+			<hr class="ruler-xxl"/>
+
+			<!-- BEGIN SPARKLINE -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="text-primary">Sparkline charts</h2>
+				</div><!--end .col -->
+				<div class="col-lg-12">
+					<h4>Examples</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>
+							This jQuery plugin generates sparklines (small inline charts) directly in the browser using data supplied either inline in the HTML, or via javascript.
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<p>
+								Lorem ipsum dolor <span class="inlinesparkline" data-type="pie">1,1,2</span>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna <span class="inlinesparkline" data-type="discrete">4,6,7,7,4,3,2,1,4,4</span>. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate <span class="inlinesparkline">1,4,4,7,5,9,10</span> cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa <span class="inlinesparkline" data-type="bar">1,4,4,7,5,9,10</span> qui officia deserunt mollit anim id est laborum.
+							</p>
+							<p>
+								Curabitur <span class="inlinesparkline" data-type="box">4,27,34,52,54,59,61,68,78,82,85,87,91,93,100</span> tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis <span class="inlinesparkline" data-type="bullet">10,12,12,9,7</span> ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. <span class="inlinesparkline" data-type="tristate">1,1,0,1,-1,-1,1,-1,0,0,1,1</span> Etiam tempor.
+							</p>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Sparkline work perfectly in large parts of text</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<div class="row">
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>
+							With Sparklines you can also create larger charts as you can see below.
+						</p>
+					</article>
+				</div>
+				<div class="col-lg-offset-1 col-md-4 col-sm-6">
+					<div class="card">
+						<div class="card-body">
+							<span class="sparkline3" data-line-color="#9C27B0"></span>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Large sparkline</em>
+				</div>
+				<div class="col-md-4 col-sm-6">	
+					<div class="card">
+						<div class="card-body">
+							<span class="sparkline4" data-line-color="#20252b" data-fill-color="#9C27B0"></span>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Large sparkline</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END SPARKLINE -->
+
+			<hr class="ruler-xxl"/>
+
+			<!-- BEGIN MORRIS - AREA CHART -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="text-primary">Morris charts</h2>
+				</div><!--end .col -->
+				<div class="col-lg-12">
+					<h4>Area chart</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>
+							Create an area chart using <code>Morris.Area(options)</code>. 
+							Area charts take all the same options as line charts, and the following extras: <code>behaveLikeLine</code>
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<div id="morris-area-graph" class="height-5" data-colors="#9C27B0,#0aa89e"></div>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Area chart</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END MORRIS - AREA CHART -->
+
+			<!-- BEGIN MORRIS - GROUPED BAR CHART -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h4>Bar charts</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>
+							Create bar charts using <code>Morris.Bar(options)</code>.
+						</p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<div id="morris-bar-graph" class="height-7" data-colors="#9C27B0,#2196F3,#0aa89e"></div>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Grouped bar chart</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END MORRIS - GROUPED BAR CHART -->
+
+			<!-- BEGIN MORRIS - STACKED BAR CHART -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h4>Stacked bar charts</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>Create a stacked bar chart by using <code>stacked:true</code></p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<div id="morris-stacked-bar-graph" class="height-7" data-colors="#9C27B0,#2196F3,#0aa89e"></div>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Stacked bar chart</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END MORRIS - STACKED BAR CHART -->
+
+			<!-- BEGIN MORRIS - STACKED BAR CHART -->
+			<div class="row">
+				<div class="col-lg-12">
+					<h4>Donut chart</h4>
+				</div><!--end .col -->
+				<div class="col-lg-3 col-md-4">
+					<article class="margin-bottom-xxl">
+						<p>This really couldn't be easier. Create a Donut chart using <code>Morris.Donut(options)</code></p>
+					</article>
+				</div><!--end .col -->
+				<div class="col-lg-offset-1 col-md-8">
+					<div class="card">
+						<div class="card-body">
+							<div id="morris-donut-graph" class="height-6" data-colors="#9C27B0,#2196F3,#0aa89e,#FF9800"></div>
+						</div><!--end .card-body -->
+					</div><!--end .card -->
+					<em class="text-caption">Donut chart</em>
+				</div><!--end .col -->
+			</div><!--end .row -->
+			<!-- END MORRIS - STACKED BAR CHART -->
+
 		</div><!--end .section-body -->
 	</section>
+
+	<!-- BEGIN MORRIS - LINE CHART -->
+	<section class="style-default-dark">
+		<div class="section-body">
+			<h2 class="text-primary">Morris Line chart</h2>
+			<p>
+				The public API is terribly simple. It's just one function: <code>Morris.Line(options)</code>, where options is an object containing some of the following configuration options.
+			</p>
+			<div id="morris-line-graph" class="height-8" data-colors="#9C27B0"></div>
+		</div><!--end .section-body -->
+	</section>
+	<!-- END MORRIS - LINE CHART -->
 
 		</div><!--end #content-->		
 		<!-- END CONTENT -->
 
 		<!-- BEGIN MENUBAR-->
-		<div id="menubar" class="menubar-inverse">
+		<div id="menubar" class="menubar-inverse ">
 			<div class="menubar-fixed-panel">
 				<div>
 					<a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
@@ -527,7 +696,7 @@
 			</li><!--end /menu-li -->
 			<li><a href="/thm-material/pages/profile.html" ><span class="title">User profile<span class="badge style-accent">42</span></span></a></li>
 
-			<li><a href="/thm-material/pages/invoice.html" class="active"><span class="title">Invoice</span></a></li>
+			<li><a href="/thm-material/pages/invoice.html" ><span class="title">Invoice</span></a></li>
 
 			<li><a href="/thm-material/pages/calendar.html" ><span class="title">Calendar</span></a></li>
 
@@ -549,7 +718,7 @@
 	
 	<!-- BEGIN CHARTS -->
 	<li>
-		<a href="/thm-material/charts/charts.html" >
+		<a href="/thm-material/charts/charts.html" class="active">
 			<div class="gui-icon"><i class="md md-assessment"></i></div>
 			<span class="title">Charts</span>
 		</a>
