@@ -1,0 +1,56 @@
+/*
+ * 用作覆盖部分插件的样式（通常是为了兼容模板的需要）
+ */
+
+
+/*
+ * fullcalendar(version:2.2.6)部分
+ */
+.fc-unthemed .fc-widget-header thead {
+  opacity: 0.6;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 500;
+}
+.fc-unthemed .fc-widget-header thead .fc-day-header {
+  padding: 8px 4px;
+}
+.fc-unthemed .fc-widget-header thead th {
+  border-color: transparent;
+}
+.fc-unthemed th,
+.fc-unthemed td,
+.fc-unthemed hr,
+.fc-unthemed thead,
+.fc-unthemed tbody,
+.fc-unthemed .fc-row,
+.fc-unthemed .fc-popover {
+  border-color: #e5e6e6;
+}
+.fc-unthemed .fc-today {
+  background: rgba(10, 168, 158, 0.07);
+}
+.fc-unthemed .fc-event {
+  border-color: #0aa89e;
+  background-color: #0aa89e;
+}
+.fc-event.event-danger {
+  border-color: #f44336;
+  background-color: #f44336;
+}
+.fc-event.event-warning {
+  border-color: #ff9800;
+  background-color: #ff9800;
+}
+.fc-event.event-success {
+  border-color: #4caf50;
+  background-color: #4caf50;
+}
+.fc-event.event-info {
+  border-color: #2196f3;
+  background-color: #2196f3;
+}
+.fc-event.event-default {
+  border-color: #969c9c;
+  background-color: #969c9c;
+}
