@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Time Page</title>
+<script type="text/javascript" integrity="sha384-Pn+PczAsODRZ2PiGg0IheRROpP7lXO1NTIjiPo6cca8TliBvaeil42fobhzvZd74" crossorigin="anonymous" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+
+var csrfParam, csrfToken;
+
+function loginHandle(data, textStatus, jqXHR)
+{
+	if ("success" == data.result)
+	{
+		alert("成功登录");
+
+		if (data.csrf)
+		{
+			for (i in data.csrf)
+			{
+				csrfParam = i;
+				csrfToken = data.csrf[i];
+
+				break;
+			}
+		}
+
+		$.ajax({
+			xhrFields: {
+				withCredentials: true
+			},
+			url: "http://kinwaa.iask.in/demo/data/time.json",
+			dataType: "json",
+			success: refreshTime
+		});
+	}
+	else
+		alert("[" + data.rcode + "]" + data.message);
+}
+
+function refreshTime(data, textStatus, jqXHR)
+{
+	if ("success" == data.result)
+		$("#timeDiv").text(data.time);
+
+	else if (1 == data.rcode)
+	{
+		alert("需要登录（确认后自动登录）");
+
+		var param = {};
+		param[data.form.usernameParam] = "kinwaa";
+		param[data.form.passwordParam] = "leung";
+
+		if (data.csrf)
+		{
+			for (i in data.csrf)
+			{
+				csrfParam = i;
+				csrfToken = data.csrf[i];
+
+				break;
+			}
+
+			param[csrfParam] = csrfToken;
+		}
+
+		$.ajax({
+			xhrFields: {
+				withCredentials: true
+			},
+			url: "http://kinwaa.iask.in" + data.form.action,
+			data: param,
+			method: "POST",
+			dataType: "json",
+			success: loginHandle
+		});
+	}
+
+	else
+		alert("[" + data.rcode + "]" + data.message);
+}
+
+function logoutHandle(data, textStatus, jqXHR)
+{
+	if ("success" == data.result)
+	{
+		alert("成功登出");
+
+		$("#timeDiv").text("");
+	}
+
+	else
+		alert("[" + data.rcode + "]" + data.message);
+}
+
+$(document).ready(function()
+{
+	$("#btnRefresh").click(function()
+	{
+		$.ajax({
+			xhrFields: {
+				withCredentials: true
+			},
+			url: "http://kinwaa.iask.in/demo/data/time.json",
+			dataType: "json",
+			success: refreshTime
+		});
+	});
+
+	$("#btnLogin").click(function()
+	{
+		var param = {};
+
+		param[csrfParam] = csrfToken;
+
+		$.ajax({
+			xhrFields: {
+				withCredentials: true
+			},
+			url: "http://kinwaa.iask.in/demo/logout.json",
+			data: param,
+			method: "POST",
+			dataType: "json",
+			success: logoutHandle
+		});
+	});
+});
+
+</script>
+</head>
+
+<body><div><button id="btnRefresh">刷新</button><button id="btnLogin">登出</button></div><div id="timeDiv"></div></body>
+</html>
