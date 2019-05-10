@@ -6,6 +6,7 @@
 <script src="https://cdn.staticfile.org/react/16.8.6/umd/react.development.js"></script>
 <script src="https://cdn.staticfile.org/react-dom/16.8.6/umd/react-dom.development.js"></script>
 <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
+<script src="https://cdn.staticfile.org/prop-types/15.7.2/prop-types.min.js"></script>
 <script type="text/babel">
 var testStyle = {
    color : 'red'
@@ -52,6 +53,10 @@ class Clock extends React.Component {
    }
 }
 
+Clock.propTypes = {
+   name : PropTypes.string
+};
+
 Clock.defaultProps = {
    name : "world"
 };
@@ -61,6 +66,6 @@ Clock.defaultProps = {
 
 <body><div id="example"></div></body>
 <script type="text/babel">
-ReactDOM.render(<Clock name="andy" />, document.getElementById('example'));
+ReactDOM.render(<Clock name="kinwaa" />, document.getElementById('example'));
 </script>
 </html>
