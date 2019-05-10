@@ -15,7 +15,9 @@ class Clock extends React.Component {
    constructor(props) {
       super(props);
 
-      this.state = {date : new Date()};
+      this.state = {
+         date : new Date()
+      };
    }
 
    componentDidMount() {
@@ -43,18 +45,22 @@ class Clock extends React.Component {
    render() {
       return (
          <div>
-            <h1 style={testStyle}>Hello, world!</h1>
+            <h1 style={testStyle}>Hello, {this.props.name}!</h1>
             <h2>现在是 {this.state.date.toLocaleTimeString()}.</h2>
          </div>
       );
    }
 }
 
+Clock.defaultProps = {
+   name : "world"
+};
+
 </script>
 </head>
 
 <body><div id="example"></div></body>
 <script type="text/babel">
-ReactDOM.render(<Clock />, document.getElementById('example'));
+ReactDOM.render(<Clock name="andy" />, document.getElementById('example'));
 </script>
 </html>
