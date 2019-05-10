@@ -61,11 +61,19 @@ Clock.defaultProps = {
    name : "world"
 };
 
+function ActionLink() {
+   function handleClick(e) {
+      e.preventDefault();
+      console.log("链接被点击");
+   }
+
+   return (<a href="#" onClick={handleClick}>点我</a>);
+}
 </script>
 </head>
 
 <body><div id="example"></div></body>
 <script type="text/babel">
-ReactDOM.render(<Clock name="kinwaa" />, document.getElementById('example'));
+ReactDOM.render(<ActionLink />, document.getElementById('example'));
 </script>
 </html>
