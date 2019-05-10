@@ -7,59 +7,8 @@
 <script src="https://cdn.staticfile.org/react-dom/16.8.6/umd/react-dom.development.js"></script>
 <script src="https://cdn.staticfile.org/babel-standalone/6.26.0/babel.min.js"></script>
 <script src="https://cdn.staticfile.org/prop-types/15.7.2/prop-types.min.js"></script>
+<script type="text/babel" src="react-clock.js"></script>
 <script type="text/babel">
-var testStyle = {
-   color : 'red'
-};
-
-class Clock extends React.Component {
-   constructor(props) {
-      super(props);
-
-      this.state = {
-         date : new Date()
-      };
-   }
-
-   componentDidMount() {
-      /*
-      let that = this;
-      this.timerID = setInterval(function() {
-         return that.tick();
-      }, 100);
-       */
-      this.timerID = setInterval(
-         () => this.tick(),
-         100
-      )
-   }
-   componentWillUnmount() {
-      clearInterval(this.timerID);
-   }
-
-   tick() {
-      this.setState({
-         date : new Date()
-      })
-   }
-
-   render() {
-      return (
-         <div>
-            <h1 style={testStyle}>Hello, {this.props.name}!</h1>
-            <h2>现在是 {this.state.date.toLocaleTimeString()}.</h2>
-         </div>
-      );
-   }
-}
-
-Clock.propTypes = {
-   name : PropTypes.string
-};
-
-Clock.defaultProps = {
-   name : "world"
-};
 
 function ActionLink() {
    function handleClick(e) {
@@ -74,6 +23,6 @@ function ActionLink() {
 
 <body><div id="example"></div></body>
 <script type="text/babel">
-ReactDOM.render(<ActionLink />, document.getElementById('example'));
+ReactDOM.render(<Clock />, document.getElementById('example'));
 </script>
 </html>
