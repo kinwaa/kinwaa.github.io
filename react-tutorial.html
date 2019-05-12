@@ -26,6 +26,11 @@ function ActionLink() {
 
 <body><div id="randerRoot"></div></body>
 <script type="text/babel">
-ReactDOM.render(<LoginControl />, document.getElementById("randerRoot"));
+const numbers = [1,2,3,4,5];
+const listItems = numbers.map(
+   (numbers) => <li key={numbers.toString()}>{numbers}</li>
+);
+
+ReactDOM.render(<ul>{listItems}</ul>, document.getElementById("randerRoot"));
 </script>
 </html>
