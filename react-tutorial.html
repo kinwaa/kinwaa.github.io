@@ -9,6 +9,8 @@
 <script src="https://cdn.staticfile.org/prop-types/15.7.2/prop-types.min.js"></script>
 <script type="text/babel" src="react-clock.js"></script>
 <script type="text/babel" src="react-toggle.js"></script>
+<script type="text/babel" src="react-greeting.js"></script>
+<script type="text/babel" src="react-login.js"></script>
 <script type="text/babel">
 
 function ActionLink() {
@@ -22,8 +24,8 @@ function ActionLink() {
 </script>
 </head>
 
-<body></body>
+<body><div id="randerRoot"></div></body>
 <script type="text/babel">
-ReactDOM.render(<Toggle />, document.body);
+ReactDOM.render(<LoginControl />, document.getElementById("randerRoot"));
 </script>
 </html>
