@@ -1,17 +1,17 @@
 [
    {
       "urlPrefix": "https://14664n713vb75vv0d4r00k6u2o571omlet4hli6uhmusbevloqm0.kulfi.site/api",
-      "httsSupport": true,
+      "httpsSupport": true,
       "delay": 1797
    },
    {
       "urlPrefix": "http://suredoc.kinwaa.cn/api",
-      "httsSupport": false,
+      "httpsSupport": false,
       "delay": 53
    },
    {
       "urlPrefix": "https://cee0b1092639.ngrok-free.app/api",
-      "httsSupport": true,
+      "httpsSupport": true,
       "delay": 102,
       "requireHeader": {
          "ngrok-skip-browser-warning": {
